@@ -44,5 +44,17 @@
         </div>
       </div>
     </footer>
+
+    <SpeedInsights />
   </div>
 </template>
+
+<script>
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+
+export default {
+  setup() {
+    return { SpeedInsights }
+  },
+}
+</script>
