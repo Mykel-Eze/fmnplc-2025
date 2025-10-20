@@ -1,8 +1,11 @@
 <template>
     <!--=== Hero Section ===-->
     <Hero />
+    <!--=== end of Hero Section ===-->
 
-    <!--=== Hero Section ===-->
+    <!--=== Career Section ===-->
+    <CareerSection />
+    <!--=== end of Career Section ===-->
 </template>
 
 <script lang="ts" setup>
@@ -11,6 +14,4 @@ useHead({
 })
 </script>
 
-<style>
-
-</style>
+<style src="@/assets/css/home.css"></style>

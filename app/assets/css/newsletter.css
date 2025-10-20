@@ -1,0 +1,138 @@
+/* Light Mode */
+.newsletter-card {
+    background: linear-gradient(to bottom right, #1f2937, #111827);
+    background-image: url("../images/newsletter-bg.png");
+    background-position: center;
+    background-size: cover;
+    /* border: 1px solid #374151; */
+}
+
+.newsletter-title {
+    color: #ffffff;
+}
+
+.newsletter-description {
+    color: #d1d5db;
+}
+
+.privacy-notice {
+    color: #9ca3af;
+}
+
+.success-icon-wrapper {
+    background-color: #16a34a;
+}
+
+.success-title {
+    color: #ffffff;
+}
+
+.success-message {
+    color: #d1d5db;
+}
+
+/* Dark Mode */
+.dark-mode .newsletter-section {
+    background-color: #000000;
+}
+
+.dark-mode .newsletter-card {
+    background: linear-gradient(to bottom right, #1f2937, #0f172a);
+    border-color: #1f2937;
+}
+
+.dark-mode .newsletter-title {
+    color: #f3f4f6;
+}
+
+.dark-mode .newsletter-description {
+    color: #e5e7eb;
+}
+
+.dark-mode .privacy-notice {
+    color: #9ca3af;
+}
+
+.dark-mode .privacy-link {
+    color: var(--pry-color);
+}
+
+.dark-mode .privacy-link:hover {
+    color: var(--pry-color);
+}
+
+.dark-mode .success-title {
+    color: #f3f4f6;
+}
+
+.dark-mode .success-message {
+    color: #d1d5db;
+}
+
+/* PrimeVue component overrides */
+.p-inputtext {
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+.p-inputtext:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 1px #10b981;
+}
+
+.dark-mode .p-inputtext {
+    background-color: #374151;
+    color: #f3f4f6;
+    border-color: #4b5563;
+}
+
+.dark-mode .p-inputtext:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 1px #10b981;
+}
+
+.subscribe-button {
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    background-color: var(--pry-color);
+    color: white;
+    border-color: var(--pry-color);
+}
+
+.subscribe-button:hover {
+    transform: scale(1.02);
+}
+
+.subscribe-button:disabled {
+    transform: scale(1);
+    cursor: not-allowed;
+}
+
+/* Transitions */
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transform: translateY(-4px);
+}
+
+.scale-enter-active,
+.scale-leave-active {
+    transition: all 0.4s ease;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+    opacity: 0;
+    transform: scale(0.9);
+}

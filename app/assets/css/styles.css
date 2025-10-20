@@ -49,19 +49,19 @@ body {
     background: #111111;
 }
 
-h1, h2, h3, h4{
-    font-family: var(--font-xlite);
-    letter-spacing: -2px;
-}
-h5, h6{
+h1, h2, h3{
     font-family: var(--font-xlite);
     letter-spacing: -1px;
+}
+h4, h5, h6{
+    font-family: var(--font-xlite);
+    letter-spacing: 0px;
 }
 
 .pad0{
     padding: 0 !important;
 }
-.hidden{
+.hidden-item{
     display: none;
 }
 .reg-txt{
@@ -160,4 +160,32 @@ img {
 }
 .hover-scale:hover {
     transform: scale(1.1);
+}
+
+footer, header {
+    background-color: white;
+}
+
+.dark-mode footer, .dark-mode header {
+    background-color: #010F05;
+}
+
+.dark-mode nav a, .dark-mode footer a {
+    color: white;
+}
+.dark-mode nav a:hover, .dark-mode footer a:hover {
+    color: var(--pry-color);
+}
+
+.light-mode-img {
+    display: initial;
+}
+.dark-mode-img {
+    display: none;
+}
+.dark-mode .light-mode-img {
+    display: none;
+}
+.dark-mode .dark-mode-img {
+    display: initial;
 }
