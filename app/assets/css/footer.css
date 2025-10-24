@@ -4,6 +4,10 @@
 }
 .footer-heading {
     color: #111827;
+    font-size: 18px;
+    font-family: var(--font-bold);
+    letter-spacing: -1px;
+    margin-bottom: 12px;
 }
 .footer-link {
     color: #6b7280;
@@ -12,21 +16,34 @@
     color: #15803d;
 }
 .footer-text {
-    color: #6b7280;
+    color: rgba(96, 94, 94, 1);
 }
 .footer-copyright {
-    color: #9ca3af;
+    color: rgba(28, 27, 23, 0.4);
 }
 .footer-separator {
-    color: #d1d5db;
+    color: rgba(28, 27, 23, 0.4);
 }
 .social-button {
     background-color: #15803d !important;
     border-color: #15803d !important;
+    color: white;
+    border-radius: 4px;
+    padding: 0;
 }
 .social-button:hover {
     background-color: #166534 !important;
     border-color: #166534 !important;
+}
+.social-icon img {
+    height: 25px;
+    position: relative;
+    transition: all linear 1s;
+}
+.social-icon img:hover {
+    height: 25px;
+    position: relative;
+    transform: scale(1.2);
 }
 
 /* Dark Mode */

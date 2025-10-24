@@ -1,11 +1,11 @@
 <template>
   <footer id="footer" class="footer-main mt-auto">
     <!-- Main Footer Content -->
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
         <!-- Company Column -->
         <div>
-          <h3 class="footer-heading font-semibold text-lg mb-4">Company</h3>
+          <h3 class="footer-heading">Company</h3>
           <ul class="space-y-3">
             <li v-for="link in companyLinks" :key="link.label">
               <a
@@ -20,7 +20,7 @@
 
         <!-- Investors Column -->
         <div>
-          <h3 class="footer-heading font-semibold text-lg mb-4">Investors</h3>
+          <h3 class="footer-heading">Investors</h3>
           <ul class="space-y-3">
             <li v-for="link in investorLinks" :key="link.label">
               <a
@@ -35,7 +35,7 @@
 
         <!-- Media Column -->
         <div>
-          <h3 class="footer-heading font-semibold text-lg mb-4">Media</h3>
+          <h3 class="footer-heading">Media</h3>
           <ul class="space-y-3">
             <li v-for="link in mediaLinks" :key="link.label">
               <a
@@ -50,14 +50,14 @@
 
         <!-- Contact Column -->
         <div>
-          <h3 class="footer-heading font-semibold text-lg mb-4">Contact</h3>
+          <h3 class="footer-heading">Contact</h3>
           <ul class="space-y-3">
             <li>
               <a
                 href="mailto:info@fmnplc.com"
                 class="footer-link text-sm flex items-center space-x-2 transition-colors"
               >
-                <i class="pi pi-envelope"></i>
+                <!-- <i class="pi pi-envelope"></i> -->
                 <span>info@fmnplc.com</span>
               </a>
             </li>
@@ -66,7 +66,7 @@
                 href="tel:+2347056891000"
                 class="footer-link text-sm flex items-center space-x-2 transition-colors"
               >
-                <i class="pi pi-phone"></i>
+                <!-- <i class="pi pi-phone"></i> -->
                 <span>+234 (705) 689-1000</span>
               </a>
             </li>
@@ -75,7 +75,7 @@
                 href="tel:+2347056892000"
                 class="footer-link text-sm flex items-center space-x-2 transition-colors"
               >
-                <i class="pi pi-phone"></i>
+                <!-- <i class="pi pi-phone"></i> -->
                 <span>+234 (705) 689-2000</span>
               </a>
             </li>
@@ -84,43 +84,43 @@
       </div>
 
       <!-- Divider -->
-      <Divider />
+      <Divider class="mb-12 mt-10" />
 
       <!-- Bottom Section -->
-      <div class="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0">
+      <div class="flex flex-col md:flex-row items-center justify-around space-y-6 lg:space-y-0">
         <!-- Logo and Address -->
-        <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-8">
-          <div class="flex-shrink-0">
-            <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="footer-logo h-16 w-auto light-mode-img" />
-            <img src="@/assets/images/fmn-white.png" alt="FMN Logo" class="footer-logo h-16 w-auto dark-mode-img" />
-          </div>
-          <div class="text-center lg:text-left">
-            <h4 class="footer-heading font-semibold mb-2">Corporate HQ</h4>
-            <p class="footer-text text-sm">
-              1 Golden Penny Place Wharf Road<br />
-              Apapa, Lagos State
-            </p>
-          </div>
+         <div class="flex-shrink-0">
+          <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="footer-logo h-16 w-auto light-mode-img" />
+          <img src="@/assets/images/fmn-white.png" alt="FMN Logo" class="footer-logo h-16 w-auto dark-mode-img" />
+        </div>
+
+        <div class="text-center">
+          <p class="footer-text font-bold">Corporate HQ</p>
+          <p class="footer-text text-sm">
+            1 Golden Penny Place Wharf Road<br />
+            Apapa, Lagos State
+          </p>
         </div>
 
         <!-- Social Links -->
         <div class="flex items-center space-x-4">
-          <Button
-            v-for="social in socialLinks"
-            :key="social.name"
-            :icon="social.icon"
-            :aria-label="social.name"
-            :href="social.href"
-            as="a"
-            rounded
-            class="social-button"
-            severity="success"
-          />
+          <a href="#linkedin" class="social-icon">
+            <img src="@/assets/images/linkedin.svg" alt="linkedin">
+          </a>
+          <a href="#instagram" class="social-icon">
+            <img src="@/assets/images/instagram.svg" alt="instagram">
+          </a>
+          <a href="#x" class="social-icon">
+            <img src="@/assets/images/x.svg" alt="x">
+          </a>
+          <a href="#facebook" class="social-icon">
+            <img src="@/assets/images/facebook.svg" alt="">
+          </a>
         </div>
       </div>
 
       <!-- Final Bottom Bar -->
-      <Divider class="mt-8" />
+      <Divider class="mt-12" />
       
       <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 pt-8">
         <!-- Language Selector -->
@@ -192,13 +192,6 @@ const mediaLinks = [
   { label: 'Gallery', href: '#gallery' },
   { label: 'Blog', href: '#blog' },
   { label: 'Press Release', href: '#press' }
-];
-
-const socialLinks = [
-  { name: 'LinkedIn', icon: 'pi pi-linkedin', href: '#linkedin' },
-  { name: 'Instagram', icon: 'pi pi-instagram', href: '#instagram' },
-  { name: 'Twitter', icon: 'pi pi-twitter', href: '#twitter' },
-  { name: 'Facebook', icon: 'pi pi-facebook', href: '#facebook' }
 ];
 </script>
 
