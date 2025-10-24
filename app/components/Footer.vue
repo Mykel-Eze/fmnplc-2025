@@ -137,7 +137,7 @@
 
         <!-- Copyright -->
         <p class="footer-copyright text-sm text-center">
-          © Flour Mill of Nigeria 2025. All rights reserved
+          © Flour Mill of Nigeria {{ new Date().getFullYear() }}. All rights reserved
         </p>
 
         <!-- Legal Links -->

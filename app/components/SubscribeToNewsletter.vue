@@ -4,7 +4,7 @@
       <div class="newsletter-card rounded-3xl p-8 md:p-12 shadow-2xl">
         <!-- Content -->
         <div class="text-center mb-8">
-          <h2 class="section-main-title newsletter-title text-3xl md:text-4xl font-bold mb-4">
+          <h2 class="section-title newsletter-title text-3xl md:text-4xl font-bold mb-4">
             Stay Updated
           </h2>
           <p class="section-description newsletter-description text-base md:text-lg max-w-2xl mx-auto leading-relaxed">

@@ -54,25 +54,139 @@ button.hero-cta-button:hover {
 @media(max-width: 600px) {}
 /*---=== end of Hero Section ===---*/
 
-/*---=== Section ===---*/
-.section-title {
+/*---=== Business Verticals Section ===---*/
+.verticals-section {
+    background-color: #ffffff;
+}
+.section-label {
     font-size: 14px;
     font-family: var(--font-smbold);
     color: var(--pry-color);
     line-height: 24px;
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
-.section-main-title {
+.section-title {
     font-size: 32px;
     font-family: var(--font-bold);
     line-height: 120%;
     margin-bottom: 8px;
 }
+.vertical-card {
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+.vertical-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+}
+.vertical-image-wrapper {
+    position: relative;
+    background-color: #f3f4f6;
+}
+.vertical-image {
+    object-fit: cover;
+}
+.vertical-content {
+    z-index: 10;
+}
+.vertical-name {
+    line-height: 1.3;
+    letter-spacing: 0;
+    font-size: 24px;
+    font-family: var(--font-bold)
+}
+.vertical-name hr.dash {
+  height: 2px;
+  background-color: white;
+  width: 15px;
+}
+small.vertical-subtitle {
+    font-family: var(--font-lite);
+    font-size: 18px;
+}
+.vertical-arrow-wrapper {
+    transition: all 0.3s ease;
+}
+.vertical-card:hover .vertical-arrow-wrapper {
+    transform: translateX(4px);
+}
+.vertical-description {
+   font-size: 20px;
+   font-family: var(--font-lite);
+   line-height: 140%;
+   color: white;
+}
+
+.vertical-content {
+  z-index: 20;
+}
+.vertical-hover-overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    z-index: 10;
+    background-color: var(--pry-color);
+    border-top: 4px solid var(--sec-color);
+}
+.vertical-hover-overlay.hovered {
+  height: 100%;
+}
+/* Transitions */
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+    transition: all 0.4s ease;
+}
+.fade-slide-enter-from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.fade-slide-leave-to {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.fade-slide-enter-to,
+.fade-slide-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dark Mode */
+.dark-mode .verticals-section {
+    background-color: #000000;
+}
+.dark-mode .vertical-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.dark-mode .vertical-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .vertical-card {
+        height: auto;
+    }
+    .vertical-image-wrapper {
+        height: 300px;
+    }
+    .section-title {
+        font-size: 1.875rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .vertical-image-wrapper {
+        height: 320px;
+    }
+}
 
 @media(max-width: 992px) {}
 
 @media(max-width: 600px) {}
-/*---=== Section ===---*/
+/*---=== end of Business Verticals Section ===---*/
 
 /*---=== Career Section ===---*/
 .careers-section {

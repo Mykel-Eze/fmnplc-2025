@@ -9,7 +9,7 @@
         </div>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden lg:flex items-center space-x-1">
+        <nav class="!hidden lg:!flex items-center space-x-1">
           <a
             v-for="item in mainNavItems"
             :key="item.label"
@@ -23,7 +23,7 @@
         </nav>
 
         <!-- Desktop Actions -->
-        <div class="hidden lg:flex items-center space-x-4">
+        <div class="!hidden lg:!flex items-center space-x-4">
           <Button
             icon="pi pi-search"
             text
@@ -48,7 +48,7 @@
           text
           rounded
           severity="secondary"
-          class="lg:hidden"
+          class="lg:!hidden"
           @click="toggleMobileMenu"
           aria-label="Toggle menu"
         />

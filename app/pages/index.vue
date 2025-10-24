@@ -3,6 +3,10 @@
     <Hero />
     <!--=== end of Hero Section ===-->
 
+    <!--=== Business Verticals Section ===-->
+    <BuisnessVerticalsSection />
+    <!--=== end of Business Verticals Section ===-->
+
     <!--=== Career Section ===-->
     <CareerSection />
     <!--=== end of Career Section ===-->

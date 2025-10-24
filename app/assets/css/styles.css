@@ -136,6 +136,7 @@ h4, h5, h6{
 }
 .flex-div{
     display: flex;
+    align-items: center;
 }
 .mag-0{
     margin: 0 !important;

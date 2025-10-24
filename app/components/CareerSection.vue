@@ -27,10 +27,10 @@
         <Card class="careers-card max-w-2xl w-full">
           <template #content>
             <div class="text-center p-8">
-              <p class="section-title careers-label">
+              <p class="section-label careers-label">
                 CAREERS
               </p>
-              <h2 class="section-main-title careers-title">
+              <h2 class="section-title careers-title">
                 Join the FMN Family
               </h2>
               <p class="section-description careers-description text-gray-600 text-base mb-8 leading-relaxed">
@@ -54,10 +54,10 @@
     <div class="md:hidden career-block-mobile">
       <!-- Content (Top) -->
       <div class="mb-12">
-        <p class="section-title careers-label-mobile">
+        <p class="section-label careers-label-mobile">
           CAREERS
         </p>
-        <h2 class="section-main-title careers-title-mobile mb-4">
+        <h2 class="section-title careers-title-mobile mb-4">
           Join the FMN Family
         </h2>
         <p class="section-description careers-description-mobile text-gray-600 text-base md:text-lg mb-8 leading-relaxed">
