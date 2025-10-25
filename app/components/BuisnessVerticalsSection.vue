@@ -33,7 +33,7 @@
           <!-- Default Content (Always Visible) -->
           <div class="vertical-content absolute bottom-0 left-0 right-0">
             <div class="p-6 ">
-              <h3 class="vertical-name text-white text-xl font-bold mb-1 w-full flex-div justify-between">
+              <h3 class="vertical-name text-white mb-1 w-full flex-div justify-between">
                 <div class="flex-div gap-3">
                   <span>{{ vertical.name }}</span>
                   <hr v-if="vertical.subtitle" class="dash" />

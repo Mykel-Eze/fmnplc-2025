@@ -7,6 +7,14 @@
     <BuisnessVerticalsSection />
     <!--=== end of Business Verticals Section ===-->
 
+    <!--=== Explore Products Section ===-->
+    <ExploreProductsSection />
+    <!--=== end of Explore Products Section ===-->
+
+    <!--=== Company Marquee Section ===-->
+    <CompaniesMarqueeSection />
+    <!--=== end of Company Marquee Section ===-->
+
     <!--=== Career Section ===-->
     <CareerSection />
     <!--=== end of Career Section ===-->

@@ -162,10 +162,6 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
-import Divider from 'primevue/divider';
-import Button from 'primevue/button';
-import Dropdown from 'primevue/dropdown';
 
 const selectedLanguage = ref('en');
 
