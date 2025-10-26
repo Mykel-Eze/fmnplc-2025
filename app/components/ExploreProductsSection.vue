@@ -2,7 +2,7 @@
   <section id="products-showcase" class="products-section relative overflow-hidden">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Header -->
-        <div class="max-w-[435px] ml-auto">
+        <div class="hidden lg:block max-w-[435px] ml-auto">
             <h2 class="section-title-2">
                 Explore a Selection of Our Brands
             </h2>
@@ -17,7 +17,7 @@
                                 <img
                                     :src="products[currentSlide]?.image"
                                     :alt="products[currentSlide]?.name"
-                                    class="product-image object-contain"
+                                    class="product-image object-contain mx-auto"
                                 />
                             </div>
                             <div class="product-details max-w-[350px]">
@@ -65,9 +65,11 @@
             <div class="mobile-header relative mb-8">
                 <!-- Header Content -->
                 <div class="mobile-header-content absolute inset-0 flex flex-col items-center justify-center px-6 py-8">
-                    <h2 class="text-2xl sm:text-3xl font-bold text-white text-center mb-6 leading-tight">
-                        Explore a Selection of Our Brands
-                    </h2>
+                    <div class="w-[75%] ml-auto mb-4">
+                        <h2 class="section-title-2">
+                            Explore a Selection of Our Brands
+                        </h2>
+                    </div>
 
                     <!-- Navigation Arrows -->
                     <div class="flex gap-4">
