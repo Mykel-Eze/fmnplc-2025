@@ -457,6 +457,7 @@ hr.product-details-line {
   }
   .mobile-product-card {
     padding: 1.5rem;
+    margin: 0;
   }
   .product-name-mobile {
     font-size: 1.125rem;
@@ -470,13 +471,12 @@ hr.product-details-line {
 /*---=== Companies-Marquee Section ===---*/
 .companies-section {
   background-color: #ffffff;
-}
-
-/* Curved Panel */
-.curved-panel {
   position: relative;
-  min-height: 400px;
-  width: 100%;
+}
+.curved-panel {
+  height: 100%;
+  background: url(../images/left-green-bg.png);
+  background-size: 100% 100%;
 }
 .curved-content {
   z-index: 10;
@@ -540,11 +540,34 @@ hr.product-details-line {
 }
 
 /* Mobile - Vertical Marquees */
+.mobile-marquee-vertical {
+  position: relative;
+}
+.mobile-marquee-vertical::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.1));
+  z-index: 1;
+}
+.mobile-marquee-vertical::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 1));
+  z-index: 1;
+}
 .marquee-container-vertical {
   overflow: hidden;
   position: relative;
   height: 600px;
-  width: 150px;
+  width: 48%;
 }
 .marquee-track-upward,
 .marquee-track-downward {
@@ -600,41 +623,35 @@ hr.product-details-line {
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
-  .curved-panel {
-    min-height: 300px;
-  }
-  .curved-content h2 {
-    font-size: 2rem;
+@media (max-width: 1023px) {
+  .curved-content {
+    padding: 4rem 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .curved-panel {
-    min-height: 250px;
-  }
-  .curved-content h2 {
-    font-size: 1.75rem;
-  }
   .curved-content {
     padding: 2rem;
   }
   .marquee-container-vertical {
-    height: 500px;
-    width: 120px;
+    height: 600px;
+    width: 45%;
+  }
+  .marquee-item-vertical {
+    width: 100%;
   }
 }
 
 @media (max-width: 640px) {
-  .curved-content h2 {
-    font-size: 1.5rem;
+  .curved-content {
+    padding-left: 1rem;
   }
   .marquee-container-vertical {
-    height: 400px;
-    width: 100px;
+    height: 550px;
   }
   .logo-image {
-    height: 3rem !important;
+    /* height: 3rem !important; */
+    width: 100% !important;
   }
 }
 /*---=== end of Companies-Marquee Section ===---*/
