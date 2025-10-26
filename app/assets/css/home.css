@@ -213,6 +213,129 @@ small.vertical-subtitle {
 }
 /*---=== end of Business Verticals Section ===---*/
 
+/*---=== Sustainability Section ===---*/
+.impact-section {
+  background-color: #ffffff;
+}
+.impact-image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.impact-image:hover {
+  transform: scale(1.02);
+}
+
+.section-description {
+  color: #6b7280;
+}
+
+/* Statistics */
+.stat-item {
+  transition: transform 0.3s ease;
+}
+.stat-icon-wrapper {
+  background-color: #fef3c7;
+  transition: all 0.3s ease;
+}
+.stat-number {
+  color: #111827;
+  font-size: 24px;
+  font-family: var(--font-bold);
+}
+.stat-label {
+  color: rgba(5, 15, 29, 1);
+  font-size: 14px;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: var(--pry-color) !important;
+  border-color: var(--pry-color) !important;
+  font-weight: 600;
+  padding: 1rem 2.5rem !important;
+  transition: all 0.3s ease;
+  border-radius: 4px !important;
+  font-size: 16px;
+  color: white !important;
+}
+.cta-button:hover {
+  background-color: #15803d !important;
+  border-color: #15803d !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.3);
+}
+
+/* Dark Mode */
+.dark-mode .impact-section {
+  background-color: #111827;
+}
+.dark-mode .section-description {
+  color: #d1d5db;
+}
+.dark-mode .stat-number {
+  color: #f3f4f6;
+}
+.dark-mode .stat-label {
+  color: #d1d5db;
+}
+.dark-mode .stat-icon-wrapper {
+  background-color: #374151;
+}
+.dark-mode .stat-item:hover .stat-icon-wrapper {
+  background-color: #fbbf24;
+}
+.dark-mode .stat-icon-wrapper i {
+  color: #f3f4f6;
+}
+.dark-mode .stat-item:hover .stat-icon-wrapper i {
+  color: #111827;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .section-heading {
+    font-size: 2.25rem;
+  }
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.875rem;
+  }
+  .stat-number {
+    font-size: 1.75rem;
+  }
+  .stat-icon-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .stat-icon-wrapper i {
+    font-size: 1.5rem;
+  }
+  .section-description {
+    font-size: 0.9375rem;
+  }
+  .stat-label {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/*---=== end of Sustainability Section ===---*/
 
 /*---=== Explore-Products Section ===---*/
 .products-section {
