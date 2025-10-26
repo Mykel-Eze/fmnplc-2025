@@ -267,7 +267,8 @@ small.vertical-subtitle {
 
 /* Dark Mode */
 .dark-mode .impact-section {
-  background-color: #111827;
+  /* background-color: #111827; */
+  background-color: #000000;
 }
 .dark-mode .section-description {
   color: #d1d5db;
@@ -280,9 +281,6 @@ small.vertical-subtitle {
 }
 .dark-mode .stat-icon-wrapper {
   background-color: #374151;
-}
-.dark-mode .stat-item:hover .stat-icon-wrapper {
-  background-color: #fbbf24;
 }
 .dark-mode .stat-icon-wrapper i {
   color: #f3f4f6;
@@ -336,6 +334,157 @@ small.vertical-subtitle {
   }
 }
 /*---=== end of Sustainability Section ===---*/
+
+/*---=== Our-FMN-Stories Section ===---*/
+.stories-section {
+  background-color: #ffffff;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  background-color: #000000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 400px;
+}
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.play-button {
+  transition: all 0.3s ease;
+}
+.play-button:hover {
+  transform: scale(1.1);
+}
+.play-button i {
+  color: #111827;
+}
+.logo-badge {
+  background-color: var(--pry-color);
+  animation: fadeInDown 0.6s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Video Player Container */
+.video-player-container {
+  width: 100%;
+  background-color: #000000;
+}
+.close-video-button {
+  transition: all 0.3s ease;
+}
+.close-video-button:hover {
+  transform: scale(1.1);
+}
+
+/* Video Description */
+.video-description {
+  animation: fadeIn 0.6s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Dark Mode */
+.dark-mode .stories-section {
+  /* background-color: #111827; */
+  background-color: #000000;
+}
+.dark-mode .video-description p {
+  color: #d1d5db;
+}
+.dark-mode .play-button {
+  background-color: rgba(31, 41, 55, 0.9);
+}
+.dark-mode .play-button i {
+  color: #f3f4f6;
+}
+.dark-mode .play-button:hover {
+  background-color: rgba(31, 41, 55, 1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .section-heading {
+    font-size: 2.25rem;
+  }
+  .video-thumbnail {
+    min-height: 350px;
+  }
+  .play-button {
+    width: 5rem;
+    height: 5rem;
+  }
+  .play-button i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.875rem;
+  }
+  .video-thumbnail {
+    min-height: 300px;
+  }
+  .play-button {
+    width: 4rem;
+    height: 4rem;
+  }
+  .play-button i {
+    font-size: 1.5rem;
+  }
+  .logo-badge {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+  .logo-badge span {
+    font-size: 1rem;
+  }
+  .video-description p {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+  .video-thumbnail {
+    min-height: 250px;
+  }
+  .play-button {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .play-button i {
+    font-size: 1.25rem;
+  }
+}
+/*---=== end of Our-FMN-Stories Section ===---*/
 
 /*---=== Explore-Products Section ===---*/
 .products-section {
@@ -529,7 +678,8 @@ hr.product-details-line {
 
 /* Dark Mode */
 .dark-mode .products-section {
-  background-color: #111827;
+  /* background-color: #111827; */
+  background-color: #000000;
 }
 .dark-mode .product-item-wrapper {
   background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
@@ -736,7 +886,8 @@ hr.product-details-line {
 
 /* Dark Mode */
 .dark-mode .companies-section {
-  background-color: #111827;
+  /* background-color: #111827; */
+  background-color: #000000;
 }
 .dark-mode .logo-image {
   filter: grayscale(20%) opacity(0.8) brightness(1.1);

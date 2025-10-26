@@ -44,7 +44,7 @@ onMounted(() => {
 }
 
 .dark-mode .layout-wrapper {
-  background-color: #111827;
+  background-color: #000000;
 }
 
 /* Main content wrapper */

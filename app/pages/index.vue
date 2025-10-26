@@ -7,9 +7,13 @@
     <BuisnessVerticalsSection />
     <!--=== end of Business Verticals Section ===-->
 
-    <!--=== SustainabilityImpact Section ===-->
+    <!--=== Sustainability Impact Section ===-->
     <SustainabilityImpact />
-    <!--=== end of SustainabilityImpact Section ===-->
+    <!--=== end of Sustainability Impact Section ===-->
+
+    <!--=== FMN Video Section ===-->
+    <OurFMNStories />
+    <!--=== end of FMN Video Section ===-->
 
     <!--=== Explore Products Section ===-->
     <ExploreProductsSection />

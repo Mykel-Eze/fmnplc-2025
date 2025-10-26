@@ -49,7 +49,7 @@ body {
 }
 .dark-mode body {
     color: var(--theme-dark-text-color);
-    background: #111111;
+    background: #000000;
 }
 
 h1, h2, h3{

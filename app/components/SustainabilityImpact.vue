@@ -6,13 +6,13 @@
         <div class="w-full lg:w-1/2">
           <!-- image that shows in light-mode -->
           <img
-            src="@/assets/images/farm-to-table.png"
+            src="@/assets/images/farm-to-table-black.png"
             alt="Sustainability Impact - Farm to Table Strategy"
             class="impact-image w-full h-auto light-mode-img"
           />
           <!-- image that shows in dark-mode -->
           <img
-            src="@/assets/images/farm-to-table.png"
+            src="@/assets/images/farm-to-table-white.png"
             alt="Sustainability Impact - Farm to Table Strategy"
             class="impact-image w-full h-auto dark-mode-img"
           />
