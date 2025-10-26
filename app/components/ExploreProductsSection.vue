@@ -1,5 +1,5 @@
 <template>
-  <section id="products-showcase" class="products-section relative overflow-hidden">
+  <section id="products-showcase" class="products-section relative overflow-hidden lg:mt-10">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Header -->
         <div class="hidden lg:block max-w-[435px] ml-auto">

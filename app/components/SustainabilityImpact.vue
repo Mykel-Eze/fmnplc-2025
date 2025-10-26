@@ -1,5 +1,5 @@
 <template>
-  <section id="sustainability-impact" class="impact-section py-20 lg:mb-10 px-4 sm:px-6 lg:px-8">
+  <section id="sustainability-impact" class="impact-section py-20 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         <!-- Left Side - Image Group -->
