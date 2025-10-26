@@ -85,6 +85,9 @@ h4, h5, h6{
 .xlite-txt{
     font-family: var(--font-xlite);
 }
+.medium-txt{
+    font-family: var(--font-medium);
+}
 .pry-font{
     font-family: var(--font-regular);
 }

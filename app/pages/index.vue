@@ -23,6 +23,10 @@
     <CompaniesMarqueeSection />
     <!--=== end of Company Marquee Section ===-->
 
+    <!--=== Latest News Section ===-->
+    <LatestNews />
+    <!--=== end of Latest News Section ===-->
+
     <!--=== Career Section ===-->
     <CareerSection />
     <!--=== end of Career Section ===-->
