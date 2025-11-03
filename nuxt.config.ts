@@ -85,7 +85,7 @@ export default defineNuxtConfig({
         '/sustainability/approach',
         '/sustainability/reporting',
         '/sustainability/priority-areas',
-        '/sustainability/awards'
+        '/sustainability/events'
       ]
     }
   },
