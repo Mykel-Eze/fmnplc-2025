@@ -6,7 +6,7 @@
     <!-- Hero Banner -->
     <PageHeroBanner
       title="Reporting"
-      background-image="/sustainability/port-hero.jpg"
+      background-image="/other-banners/sustainability-banner.png"
     />
 
     <!-- Reporting Content -->
@@ -21,11 +21,11 @@
               </p>
             </div>
             <div class="flex-shrink-0">
-              <img
+              <!-- <img
                 src="/sustainability/ungc-logo.png"
                 alt="UN Global Compact"
                 class="w-48 h-auto"
-              />
+              /> -->
             </div>
           </div>
         </div>

@@ -56,6 +56,12 @@ const selectTab = (tabId: string) => {
 </script>
 
 <style scoped>
+.tab-container {
+  background-color: rgba(235, 235, 235, 1);
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 8px;
+}
 .tab-button {
   font-weight: 600;
   transition: all 0.3s ease;
@@ -63,6 +69,7 @@ const selectTab = (tabId: string) => {
   padding: 10px 18px;
   height: 48px;
   border-radius: 4px;
+  color: black !important;
 }
 .tab-active {
   background-color: var(--pry-color) !important;
@@ -72,22 +79,36 @@ const selectTab = (tabId: string) => {
 .tab-inactive {
   background-color: transparent !important;
   border-color: #d1d5db !important;
-  color: #6b7280 !important;
+  color: #000 !important;
 }
 .tab-inactive:hover {
   background-color: #f3f4f6 !important;
-  border-color: var(--pry-color) !important;
   color: var(--pry-color) !important;
 }
 
 /* Dark Mode */
+.dark-mode .tab-container {
+  background-color: #1f2937;
+}
 .dark-mode .tab-inactive {
   border-color: #4b5563 !important;
   color: #d1d5db !important;
 }
 .dark-mode .tab-inactive:hover {
-  /* background-color: #374151 !important; */
+  background-color: #374151 !important;
   border-color: var(--pry-color) !important;
-  color: var(--pry-color) !important;
+  color: whitesmoke !important;
+}
+
+@media (min-width: 993px) {
+  .tab-button {
+    border: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .tab-container {
+    background-color: transparent !important;
+  }
 }
 </style>

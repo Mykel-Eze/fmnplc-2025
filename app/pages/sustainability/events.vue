@@ -6,7 +6,7 @@
     <!-- Hero Banner -->
     <PageHeroBanner
       title="Awards"
-      background-image="/awards/trophies-hero.jpg"
+      background-image="/other-banners/awards-banner.png"
     />
 
     <!-- Awards Accordion -->

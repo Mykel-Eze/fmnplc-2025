@@ -13,16 +13,16 @@
             <img
               :src="member.image"
               :alt="member.name"
-              class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+              class="w-full h-72 object-cover object-top transition-transform duration-500 group-hover:scale-110"
             />
           </div>
 
           <!-- Info -->
-          <div class="team-info bg-white p-5 rounded-b-2xl border-b-4 border-green-700">
-            <h3 class="team-name text-lg font-bold text-gray-900 mb-1">
+          <div class="team-info mt-[-8px] min-h-[72px] px-5 border-b-4 border-green-700">
+            <h3 class="team-name text-gray-900 mb-1">
               {{ member.name }}
             </h3>
-            <p class="team-position text-sm text-gray-600">
+            <p class="team-position text-gray-600">
               {{ member.position }}
             </p>
           </div>
@@ -53,9 +53,6 @@ const viewProfile = (id: string) => {
 </script>
 
 <style scoped>
-.team-section {
-  background-color: #ffffff;
-}
 .team-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
@@ -71,24 +68,33 @@ const viewProfile = (id: string) => {
 }
 .team-info {
   transition: border-color 0.3s ease;
+  background-color: rgba(244, 244, 245, 1);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .team-card:hover .team-info {
   border-bottom-color: #15803d;
 }
 .team-name {
   line-height: 1.3;
+  font-size: 18px;
+  font-family: var(--font-bold);
+}
+.team-position {
+    font-size: 12px;
+    line-height: 12.44px;
 }
 
 /* Dark Mode */
-.dark-mode .team-section {
-  background-color: #111827;
-}
 .dark-mode .team-image-wrapper {
   background-color: #374151;
 }
 .dark-mode .team-info {
   background-color: #1f2937;
-  border-bottom-color: #10b981;
+  border-bottom-color: var(--pry-color);
 }
 .dark-mode .team-card:hover .team-info {
   border-bottom-color: #34d399;

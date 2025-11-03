@@ -31,11 +31,11 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 items-center">
             <div class="flex justify-center lg:sticky lg:top-24">
-                <img
+                <!-- <img
                     src="/sustainability/framework-diagram.png"
                     alt="4 Pillar Framework: Governance, Economic, Environmental, Social"
                     class="w-full max-w-lg"
-                />
+                /> -->
             </div>
         </div>
       </div>

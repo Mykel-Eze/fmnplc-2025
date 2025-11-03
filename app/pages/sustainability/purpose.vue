@@ -12,18 +12,18 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left Column - Text -->
           <div>
-            <div class="content-text space-y-6">
-              <p class="text-gray-700 text-lg leading-relaxed">
+            <div class="content-text space-y-1">
+              <p class="text-gray-700 text-base leading-relaxed m-0">
                 Our business sustainability is rooted in backward integration and local content 
                 development, with core focus on processing of agricultural raw materials into superior 
                 quality within five value chains of grains, sweeteners, fats & oils, starches and proteins.
               </p>
-              <p class="text-gray-700 text-lg leading-relaxed">
+              <p class="text-gray-700 text-base leading-relaxed m-0">
                 We understand that we live in a resource finite world and depletion of resources 
                 beyond sustainable limits is a real harm to people and planet as well as undermine 
                 shared prosperity.
               </p>
-              <p class="text-gray-700 text-lg leading-relaxed">
+              <p class="text-gray-700 text-base leading-relaxed m-0">
                 We are committed to sustainable, restorative and regenerative agricultural production 
                 through integration of circular economy principles in our business model, to ensure that 
                 our core purpose of feeding and enriching lives, every day with safe and nutritious food 
