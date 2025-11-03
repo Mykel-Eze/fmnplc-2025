@@ -5,6 +5,7 @@ import Aura from '@primeuix/themes/aura';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
+  ssr: true,
   modules: [
     // '@nuxt/ui', 
     '@primevue/nuxt-module', 
@@ -19,6 +20,7 @@ export default defineNuxtConfig({
       }
   },
   app: {
+    baseURL: '/',
     head: {
       link: [
         { rel: 'icon', type: 'image/png', href: '/fmn-icon.png' }
@@ -68,10 +70,31 @@ export default defineNuxtConfig({
       ],
     },
   },
+  nitro: {
+    preset: 'node-server',
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/about',
+        '/about/management',
+        '/about/board',
+        '/about/vision',
+        '/about/history',
+        '/sustainability/purpose',
+        '/sustainability/approach',
+        '/sustainability/reporting',
+        '/sustainability/priority-areas',
+        '/sustainability/awards'
+      ]
+    }
+  },
   css: [
+    'primeicons/primeicons.css',
     '@/assets/css/fonts.css',
     '@/assets/css/styles.css',
-    'primeicons/primeicons.css'
+    '@/assets/css/home.css',
+    '@/assets/css/about.css',
   ],
   components: [
     {

@@ -4,11 +4,14 @@
       <!-- Section Header -->
       <div class="text-center mb-12">
         <p class="section-label">
-          OUR BUSINESS VERTICALS
+          {{ header.label }}
         </p>
         <h2 class="section-title mb-4">
-          Pioneering the Future of Food Production
+          {{ header.title }}
         </h2>
+        <p class="section-description max-w-[806px] mx-auto mb-4">
+          {{ header.description }}
+        </p>
       </div>
 
       <!-- Verticals Grid -->
@@ -61,6 +64,16 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+
+// Props for the section header passed from parent
+interface Header {
+  label: string;
+  title: string;
+  description?: string;
+}
+
+// Expose `header` to the template via defineProps
+const { header } = defineProps<{ header: Header }>();
 
 interface Vertical {
   id: string;

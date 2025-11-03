@@ -72,6 +72,11 @@ button.hero-cta-button:hover {
     line-height: 120%;
     margin-bottom: 8px;
 }
+.section-description {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 24px;
+}
 .vertical-card {
     position: relative;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);

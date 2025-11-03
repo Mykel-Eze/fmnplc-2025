@@ -1,10 +1,18 @@
+<!--=== /pages/index.vue ===-->
+
 <template>
     <!--=== Hero Section ===-->
     <Hero />
     <!--=== end of Hero Section ===-->
 
     <!--=== Business Verticals Section ===-->
-    <BuisnessVerticalsSection />
+    <BuisnessVerticalsSection 
+      :header="{
+        label: 'OUR SIX BUSINESS VERTICALS',
+        title: 'Pioneering the Future of Food Production',
+        description: ''
+      }"
+    />
     <!--=== end of Business Verticals Section ===-->
 
     <!--=== Sustainability Impact Section ===-->
@@ -38,4 +46,4 @@ useHead({
 })
 </script>
 
-<style src="@/assets/css/home.css"></style>
+<style></style>

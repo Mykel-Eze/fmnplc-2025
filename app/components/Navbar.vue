@@ -3,23 +3,23 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
-        <div class="flex items-center">
+        <NuxtLink to="/" class="flex items-center">
           <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="h-10 w-auto logo-img light-mode-img" />
           <img src="@/assets/images/fmn-white.png" alt="FMN Logo" class="h-10 w-auto logo-img dark-mode-img" />
-        </div>
+        </NuxtLink>
 
         <!-- Desktop Navigation -->
         <nav class="!hidden lg:!flex items-center space-x-1">
-          <a
+          <NuxtLink
             v-for="item in mainNavItems"
             :key="item.label"
-            :href="item.href"
+            :to="item.href"
             class="nav-link px-4 py-2 text-[12px] font-medium transition-colors"
             @mouseenter="item.hasDropdown ? showDropdown(item.label) : null"
             @mouseleave="item.hasDropdown ? hideDropdown() : null"
           >
             {{ item.label }}
-          </a>
+          </NuxtLink>
         </nav>
 
         <!-- Desktop Actions -->
@@ -66,10 +66,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h3 class="dropdown-title text-green-700 font-semibold text-lg mb-6">Business Verticals</h3>
           <div class="grid grid-cols-2 gap-6">
-            <a
+            <NuxtLink
               v-for="vertical in verticals"
               :key="vertical.name"
-              :href="vertical.href"
+              :to="vertical.href"
               class="vertical-card flex items-start space-x-4 p-4 rounded-lg transition-colors group"
             >
               <div class="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-700 transition-colors">
@@ -84,7 +84,7 @@
                 </div>
                 <p class="vertical-description text-sm mt-1">{{ vertical.description }}</p>
               </div>
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -100,14 +100,14 @@
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div class="grid grid-cols-1 gap-3 max-w-xs">
-            <a
+            <NuxtLink
               v-for="item in sustainabilityLinks"
               :key="item.label"
-              :href="item.href"
+              :to="item.href"
               class="sustainability-link px-4 py-3 rounded-lg transition-colors font-medium"
             >
               {{ item.label }}
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -116,10 +116,10 @@
     <!-- Mobile Sidebar -->
     <Sidebar v-model:visible="mobileMenuOpen" position="right" class="mobile-sidebar w-80">
       <template #header>
-        <div class="flex items-center justify-between w-full">
+        <NuxtLink to="/" class="flex items-center justify-between w-full">
           <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="h-8 w-auto logo-img light-mode-img" />
           <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="h-8 w-auto logo-img dark-mode-img" />
-        </div>
+        </NuxtLink>
       </template>
 
       <!-- Search & Theme Toggle -->
@@ -150,40 +150,40 @@
             class="w-full justify-between mobile-nav-button"
             @click="toggleMobileDropdown(item.label)"
           />
-          <a
+          <NuxtLink
             v-else
-            :href="item.href"
+            :to="item.href"
             class="mobile-nav-link block px-4 py-3 font-medium rounded-lg"
           >
             {{ item.label }}
-          </a>
+          </NuxtLink>
 
           <!-- Mobile Submenu for FMN Verticals -->
           <Transition name="expand">
             <div v-if="item.label === 'FMN Verticals' && item.hasDropdown && mobileDropdownOpen === item.label" class="mt-2 ml-4 space-y-2">
-              <a
+              <NuxtLink
                 v-for="vertical in verticals"
                 :key="vertical.name"
-                :href="vertical.href"
+                :to="vertical.href"
                 class="mobile-submenu-link flex items-center space-x-3 px-4 py-3 text-sm rounded-lg"
               >
                 <i :class="vertical.icon" class="text-lg text-green-700"></i>
                 <span>{{ vertical.name }}</span>
-              </a>
+              </NuxtLink>
             </div>
           </Transition>
 
           <!-- Mobile Submenu for Sustainability -->
           <Transition name="expand">
             <div v-if="item.label === 'Sustainability' && item.hasDropdown && mobileDropdownOpen === item.label" class="mt-2 ml-4 space-y-2">
-              <a
+              <NuxtLink
                 v-for="sustItem in sustainabilityLinks"
                 :key="sustItem.label"
-                :href="sustItem.href"
+                :to="sustItem.href"
                 class="mobile-submenu-link block px-4 py-3 text-sm rounded-lg"
               >
                 {{ sustItem.label }}
-              </a>
+              </NuxtLink>
             </div>
           </Transition>
         </div>
@@ -194,15 +194,15 @@
         <h3 class="contact-title font-semibold mb-3">Contact Us</h3>
         <div class="space-y-2">
           <a href="tel:+2347056891000" class="contact-link flex items-center space-x-3 text-sm">
-            <i class="pi pi-phone text-green-700"></i>
+            <i class="pi pi-phone pry-color"></i>
             <span>+234 (705) 689-1000</span>
           </a>
           <a href="tel:+2347056892000" class="contact-link flex items-center space-x-3 text-sm">
-            <i class="pi pi-phone text-green-700"></i>
+            <i class="pi pi-phone pry-color"></i>
             <span>+234 (705) 689-2000</span>
           </a>
           <a href="mailto:info@fmnplc.com" class="contact-link flex items-center space-x-3 text-sm">
-            <i class="pi pi-envelope text-green-700"></i>
+            <i class="pi pi-envelope pry-color"></i>
             <span>info@fmnplc.com</span>
           </a>
         </div>
@@ -215,7 +215,7 @@
               v-for="social in socialLinks"
               :key="social.name"
               :href="social.href"
-              class="w-10 h-10 flex items-center justify-center rounded-lg bg-green-700 text-white hover:bg-green-800 transition-colors"
+              class="w-10 h-10 flex items-center justify-center rounded-lg pry-bg text-white hover:bg-green-800 transition-colors"
               :aria-label="social.name"
             >
               <i :class="social.icon" class="text-lg"></i>
@@ -228,11 +228,6 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
-import Button from 'primevue/button';
-import Sidebar from 'primevue/sidebar';
-import InputText from 'primevue/inputtext';
-
 const mobileMenuOpen = ref(false);
 const activeDropdown = ref<string | null>(null);
 const mobileDropdownOpen = ref<string | null>(null);
@@ -267,8 +262,8 @@ const applyDarkMode = () => {
 };
 
 const mainNavItems = [
-  { label: 'Home', href: '#home', hasDropdown: false },
-  { label: 'About', href: '#about', hasDropdown: false },
+  { label: 'Home', href: '/', hasDropdown: false },
+  { label: 'About', href: '/about', hasDropdown: false },
   { label: 'FMN Verticals', href: '#verticals', hasDropdown: true },
   { label: 'Sustainability', href: '#sustainability', hasDropdown: true },
   { label: 'CSR', href: '#csr', hasDropdown: false },
@@ -317,11 +312,11 @@ const verticals = [
 ];
 
 const sustainabilityLinks = [
-  { label: 'Purpose', href: '#purpose' },
-  { label: 'Our Approach', href: '#approach' },
+  { label: 'Purpose', href: '/sustainability/purpose' },
+  { label: 'Our Approach', href: '/sustainability/approach' },
   { label: 'Priority Areas', href: '#priority' },
-  { label: 'Reporting', href: '#reporting' },
-  { label: 'Events', href: '#events' }
+  { label: 'Reporting', href: '/sustainability/reporting' },
+  { label: 'Events', href: '/sustainability/events' }
 ];
 
 const socialLinks = [
