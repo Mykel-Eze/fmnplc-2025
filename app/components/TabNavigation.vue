@@ -1,5 +1,5 @@
 <template>
-  <div class="tab-navigation-wrapper py-8 px-4 sm:px-6 lg:px-8">
+  <div class="tab-navigation-wrapper pt-14 pb-8 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="tab-container flex flex-wrap gap-3 justify-center">
         <Button
@@ -56,16 +56,17 @@ const selectTab = (tabId: string) => {
 </script>
 
 <style scoped>
-.tab-navigation-wrapper {
-  background-color: #f9fafb;
-}
 .tab-button {
   font-weight: 600;
   transition: all 0.3s ease;
+  font-size: 14px;
+  padding: 10px 18px;
+  height: 48px;
+  border-radius: 4px;
 }
 .tab-active {
-  background-color: #16a34a !important;
-  border-color: #16a34a !important;
+  background-color: var(--pry-color) !important;
+  border-color: var(--pry-color) !important;
   color: #ffffff !important;
 }
 .tab-inactive {
@@ -75,21 +76,18 @@ const selectTab = (tabId: string) => {
 }
 .tab-inactive:hover {
   background-color: #f3f4f6 !important;
-  border-color: #16a34a !important;
-  color: #16a34a !important;
+  border-color: var(--pry-color) !important;
+  color: var(--pry-color) !important;
 }
 
 /* Dark Mode */
-.dark-mode .tab-navigation-wrapper {
-  background-color: #1f2937;
-}
 .dark-mode .tab-inactive {
   border-color: #4b5563 !important;
   color: #d1d5db !important;
 }
 .dark-mode .tab-inactive:hover {
-  background-color: #374151 !important;
-  border-color: #10b981 !important;
-  color: #10b981 !important;
+  /* background-color: #374151 !important; */
+  border-color: var(--pry-color) !important;
+  color: var(--pry-color) !important;
 }
 </style>
