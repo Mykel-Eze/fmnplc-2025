@@ -71,22 +71,6 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: 'vercel',
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        '/',
-        '/about',
-        '/about/management',
-        '/about/board',
-        '/about/vision',
-        '/about/history',
-        '/sustainability/purpose',
-        '/sustainability/approach',
-        '/sustainability/reporting',
-        '/sustainability/priority-areas',
-        '/sustainability/events'
-      ]
-    }
   },
   css: [
     'primeicons/primeicons.css',
