@@ -70,7 +70,7 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    preset: 'node-server',
+    preset: 'vercel',
     prerender: {
       crawlLinks: true,
       routes: [
