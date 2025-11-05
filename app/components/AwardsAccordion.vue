@@ -28,8 +28,6 @@
 </template>
 
 <script lang="ts" setup>
-import Accordion from 'primevue/accordion';
-import AccordionTab from 'primevue/accordiontab';
 
 interface Photo {
   src: string;
@@ -60,18 +58,18 @@ const openLightbox = (src: string) => {
 }
 
 /* Custom Accordion Styling */
-:deep(.awards-accordion .p-accordion-header-link) {
-  background-color: #16a34a;
+.awards-accordion .p-accordion-header-link {
+  background-color: var(--pry-color);
   color: #ffffff;
   font-weight: 600;
   padding: 1.25rem 1.5rem;
   border-radius: 0.5rem;
   margin-bottom: 0.75rem;
 }
-:deep(.awards-accordion .p-accordion-header-link:hover) {
+.awards-accordion .p-accordion-header-link:hover {
   background-color: #15803d;
 }
-:deep(.awards-accordion .p-accordion-content) {
+.awards-accordion .p-accordion-content {
   background-color: #f9fafb;
   border: none;
   padding: 0;
@@ -89,13 +87,13 @@ const openLightbox = (src: string) => {
 .dark-mode .awards-section {
   background-color: #111827;
 }
-.dark-mode :deep(.awards-accordion .p-accordion-header-link) {
-  background-color: #15803d;
+.dark-mode .awards-accordion .p-accordion-header-link {
+  background-color: var(--pry-color);
 }
-.dark-mode :deep(.awards-accordion .p-accordion-header-link:hover) {
+.dark-mode .awards-accordion .p-accordion-header-link:hover {
   background-color: #166534;
 }
-.dark-mode :deep(.awards-accordion .p-accordion-content) {
+.dark-mode .awards-accordion .p-accordion-content {
   background-color: #1f2937;
 }
 </style>

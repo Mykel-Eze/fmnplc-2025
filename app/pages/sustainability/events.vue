@@ -1,8 +1,5 @@
 <template>
   <div id="awards-page">
-    <!-- Navbar -->
-    <Navbar />
-
     <!-- Hero Banner -->
     <PageHeroBanner
       title="Awards"
@@ -11,12 +8,6 @@
 
     <!-- Awards Accordion -->
     <AwardsAccordion :awards="awardsData" />
-
-    <!-- Newsletter -->
-    <SubscribeToNewsletter />
-
-    <!-- Footer -->
-    <Footer />
   </div>
 </template>
 

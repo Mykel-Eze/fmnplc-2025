@@ -20,7 +20,7 @@
     <!--=== end of Sustainability Impact Section ===-->
 
     <!--=== FMN Video Section ===-->
-    <OurFMNStories />
+    <OurFMNStories title="Our FMN Stories" />
     <!--=== end of FMN Video Section ===-->
 
     <!--=== Explore Products Section ===-->

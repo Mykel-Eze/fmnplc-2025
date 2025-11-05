@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Heading -->
       <h2 class="section-title !mb-8">
-        {{ title || 'Our FMN Stories' }}
+        {{ title }}
       </h2>
 
       <!-- Video Container -->

@@ -1,5 +1,5 @@
 <template>
-  <div id="about-fmn-page">
+  <div id="about-page">
     <!-- Hero Banner -->
     <AboutHeroBanner />
 
@@ -65,7 +65,7 @@ import { ref } from 'vue';
 const activeTab = ref('about');
 </script>
 
-<style scoped>
+<style>
 .content-box {
   animation: fadeIn 0.6s ease;
 }

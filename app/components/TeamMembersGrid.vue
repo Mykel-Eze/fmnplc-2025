@@ -1,6 +1,6 @@
 <template>
   <section class="team-section py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <div
           v-for="member in teamMembers"
@@ -52,7 +52,7 @@ const viewProfile = (id: string) => {
 };
 </script>
 
-<style scoped>
+<style>
 .team-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
