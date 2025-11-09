@@ -80,6 +80,22 @@
               </a>
             </li>
           </ul>
+
+          <!-- Social Links -->
+          <div class="flex items-center space-x-4 mt-4">
+            <a href="#linkedin" class="social-icon">
+              <img src="@/assets/images/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="#instagram" class="social-icon">
+              <img src="@/assets/images/instagram.svg" alt="instagram">
+            </a>
+            <a href="#x" class="social-icon">
+              <img src="@/assets/images/x.svg" alt="x">
+            </a>
+            <a href="#facebook" class="social-icon">
+              <img src="@/assets/images/facebook.svg" alt="">
+            </a>
+          </div>
         </div>
       </div>
 
@@ -89,9 +105,11 @@
       <!-- Bottom Section -->
       <div class="flex flex-col md:flex-row items-center justify-around space-y-6 lg:space-y-0">
         <!-- Logo and Address -->
-         <div class="flex-shrink-0">
-          <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="footer-logo h-16 w-auto light-mode-img" />
-          <img src="@/assets/images/fmn-white.png" alt="FMN Logo" class="footer-logo h-16 w-auto dark-mode-img" />
+        <div class="flex-shrink-0">
+          <NuxtLink to="/">
+            <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="footer-logo h-16 w-auto light-mode-img" />
+            <img src="@/assets/images/fmn-white.png" alt="FMN Logo" class="footer-logo h-16 w-auto dark-mode-img" />
+          </NuxtLink>
         </div>
 
         <div class="text-center">
@@ -102,20 +120,9 @@
           </p>
         </div>
 
-        <!-- Social Links -->
-        <div class="flex items-center space-x-4">
-          <a href="#linkedin" class="social-icon">
-            <img src="@/assets/images/linkedin.svg" alt="linkedin">
-          </a>
-          <a href="#instagram" class="social-icon">
-            <img src="@/assets/images/instagram.svg" alt="instagram">
-          </a>
-          <a href="#x" class="social-icon">
-            <img src="@/assets/images/x.svg" alt="x">
-          </a>
-          <a href="#facebook" class="social-icon">
-            <img src="@/assets/images/facebook.svg" alt="">
-          </a>
+        <!-- CGRS Badge -->
+        <div class="cgrs-badge">
+          <img src="@/assets/images/CGRS-Badge.png" alt="cgrs-badge" class="max-w-[115px]">
         </div>
       </div>
 
