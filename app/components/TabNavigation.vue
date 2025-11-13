@@ -2,18 +2,17 @@
   <div class="tab-navigation-wrapper pt-14 pb-8 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="tab-container flex flex-wrap gap-3 justify-center">
-        <Button
+        <NuxtLink
           v-for="tab in tabs"
           :key="tab.id"
-          :label="tab.label"
+          :to="tab.route"
           :class="[
             'tab-button',
-            activeTab === tab.id ? 'tab-active' : 'tab-inactive'
+            isActiveTab(tab.route) ? 'tab-active' : 'tab-inactive'
           ]"
-          :severity="activeTab === tab.id ? 'success' : 'secondary'"
-          :outlined="activeTab !== tab.id"
-          @click="selectTab(tab.id)"
-        />
+        >
+          {{ tab.label }}
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -23,35 +22,19 @@
 interface Tab {
   id: string;
   label: string;
-  route?: string;
+  route: string;
 }
 
 interface Props {
   tabs: Tab[];
-  defaultActive?: string;
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  defaultActive: ''
-});
+const props = defineProps<Props>();
 
-const emit = defineEmits<{
-  (e: 'tabChange', tabId: string): void
-}>();
+const route = useRoute();
 
-const activeTab = ref(props.defaultActive || props.tabs[0]?.id);
-
-const selectTab = (tabId: string) => {
-  activeTab.value = tabId;
-  emit('tabChange', tabId);
-  
-  // Find tab with route
-  const tab = props.tabs.find(t => t.id === tabId);
-  if (tab?.route) {
-    // Navigate to route (use Nuxt's navigateTo or Vue Router)
-    navigateTo(tab.route);
-    // console.log('Navigate to:', tab.route);
-  }
+const isActiveTab = (tabRoute: string) => {
+  return route.path === tabRoute;
 };
 </script>
 
@@ -70,6 +53,7 @@ const selectTab = (tabId: string) => {
   height: 48px;
   border-radius: 4px;
   color: black !important;
+  line-height: 2;
 }
 .tab-active {
   background-color: var(--pry-color) !important;

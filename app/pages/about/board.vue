@@ -1,8 +1,5 @@
 <template>
   <div id="management-team-page">
-    <!-- Hero Banner -->
-    <AboutHeroBanner />
-
     <!-- Tab Navigation -->
     <AboutTabNavigation
       default-active="board"

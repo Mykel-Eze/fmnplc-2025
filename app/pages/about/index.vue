@@ -1,14 +1,5 @@
 <template>
   <div id="about-page">
-    <!-- Hero Banner -->
-    <AboutHeroBanner />
-
-    <!-- Tab Navigation -->
-    <AboutTabNavigation
-      default-active="about"
-      @tab-change="activeTab = $event"
-    />
-
     <!-- About FMN Content -->
     <section class="about-content pt-6 sm:pt-10 pb-6 sm:pb-16 px-4 sm:px-6 lg:px-8">
       <div class="max-w-6xl mx-auto">

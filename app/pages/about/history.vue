@@ -1,14 +1,5 @@
 <template>
   <div id="history-page">
-    <!-- Hero Banner -->
-    <AboutHeroBanner />
-
-    <!-- Tab Navigation -->
-    <AboutTabNavigation
-      default-active="history"
-      @tab-change="activeTab = $event"
-    />
-
     <!--=== FMN Video Section ===-->
     <OurFMNStories title=" " />
     <!--=== end of FMN Video Section ===-->

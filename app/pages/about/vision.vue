@@ -1,14 +1,5 @@
 <template>
   <div id="vision-page">
-    <!-- Hero Banner -->
-    <AboutHeroBanner />
-
-    <!-- Tab Navigation -->
-    <AboutTabNavigation
-      default-active="vision"
-      @tab-change="activeTab = $event"
-    />
-
     <!--=== FMN Video Section ===-->
     <OurFMNStories title=" " />
     <!--=== end of FMN Video Section ===-->

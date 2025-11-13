@@ -1,14 +1,5 @@
 <template>
   <div id="management-team-page">
-    <!-- Hero Banner -->
-    <AboutHeroBanner />
-
-    <!-- Tab Navigation -->
-    <AboutTabNavigation
-      default-active="management"
-      @tab-change="activeTab = $event"
-    />
-
     <!-- Management Team Grid -->
     <TeamMembersGrid :team-members="managementTeam" />
   </div>
