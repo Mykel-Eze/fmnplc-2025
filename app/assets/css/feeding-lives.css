@@ -1,0 +1,171 @@
+/* Light Mode Styles */
+.farm-to-table-container {
+    background-color: #ffffff;
+    color: #1f2937;
+    min-height: 100vh;
+    font-size: 14px;
+}
+.ftc-first-grid {
+    display: grid;
+    grid-template-columns: 1fr calc(33% - 40px);
+}
+.ftc-big-side {
+    border-right: 1px solid #cccccc85;
+    padding-right: 30px;
+    margin-right: 30px;
+}
+.main-title {
+    color: var(--pry-color);
+    line-height: 1.2;
+}
+.subtitle {
+    color: var(--pry-color);
+}
+.description {
+    color: #374151;
+}
+.image-caption {
+    color: #111111;
+    font-size: 12px;
+    font-family: var(--font-medium);
+}
+.value-chain-wrapper {
+    background-color: #EFEFEF;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border-bottom: 2px solid var(--sec-color);
+}
+.dark-mode .value-chain-wrapper {
+    background-color: #0f172a;
+}
+.value-chains-section {
+    background-color: #ffffff;
+}
+.section-title {
+    color: var(--pry-color);
+    font-size: 20px;
+    line-height: normal;
+    font-family: var(--font-smbold);
+    margin-bottom: 10px;
+    letter-spacing: -0.5;
+}
+.section-title.yellow-line {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--sec-color);
+}
+.chain-name {
+    color: #1f2937;
+}
+.value-chain-card {
+    transition: transform 0.3s ease;
+}
+.value-chain-card:hover {
+    transform: translateY(-4px);
+}
+.bottom-border-divider {
+    border-bottom: 1px solid #CCCCCC;
+}
+.supply-content p,
+.fertilizer-content p,
+.sugar-content p,
+.sorghum-content p {
+    color: #374151;
+}
+.sugar-section {
+    background-color: #ffffff;
+}
+.content-title {
+    color: var(--pry-color);
+}
+.sorghum-section {
+    background-color: #f9fafb;
+}
+
+.ftc-second-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.ftc-2 {
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid #cccccc85;
+}
+
+/* Dark Mode Styles */
+.dark-mode .farm-to-table-container {
+    background-color: #000;
+    color: #e2e8f0;
+}
+.dark-mode .hero-section {
+    background-color: #1e293b;
+}
+.dark-mode .main-title {
+    color: var(--pry-color);
+}
+.dark-mode .subtitle {
+    color: var(--pry-color);
+}
+.dark-mode .description {
+    color: #cbd5e1;
+}
+.dark-mode .image-caption {
+    color: #94a3b8;
+}
+.dark-mode .section-title {
+    color: var(--pry-color);
+}
+.dark-mode .chain-name {
+    color: #f1f5f9;
+}
+.dark-mode .supply-content p,
+.dark-mode .fertilizer-content p,
+.dark-mode .sugar-content p,
+.dark-mode .sorghum-content p {
+    color: #cbd5e1;
+}
+.dark-mode .sugar-section {
+    background-color: #0f172a;
+}
+.dark-mode .content-title {
+    color: var(--pry-color);
+}
+.dark-mode .sorghum-section {
+    background-color: #1e293b;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .section-title,
+    .content-title {
+        font-size: 1.75rem;
+    }
+
+    .ftc-first-grid, .ftc-second-grid {
+        grid-template-columns: 100%;
+    }
+    .ftc-big-side {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .ftc-2 {
+        padding: 0;
+        border: none;
+        margin: 40px 0;
+    }
+}
+
+/* Image Transitions */
+.image-wrapper img {
+    transition: transform 0.3s ease;
+}
+/* Shadow Enhancements for Dark Mode */
+.dark-mode .rounded-lg.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}

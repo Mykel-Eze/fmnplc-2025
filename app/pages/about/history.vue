@@ -103,8 +103,8 @@
     <section class="other-history-content">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="content-box">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 items-center mb-12">
-            <div class="text-base order-last md:order-first">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6 items-center mb-12">
+            <div class="text-base order-last lg:order-first">
               <p>
                 Wheat milling forms the financial backbone of our diversified company. FMN pioneered flour 
                 milling in Nigeria when its first mill was commissioned at Apapa in 1962 with a grinding
@@ -130,7 +130,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 items-center">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6 items-center">
             <div class="">
               <img src="@/assets/images/hand-full-of-corn.png" alt="hand-full-of-corn" class="rounded-xl">
             </div>
