@@ -1,11 +1,5 @@
 <template>
-  <div id="management-team-page">
-    <!-- Tab Navigation -->
-    <AboutTabNavigation
-      default-active="board"
-      @tab-change="activeTab = $event"
-    />
-
+  <div id="board-page" class="pt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
@@ -43,8 +37,6 @@
 
 
 <script lang="ts" setup>
-const activeTab = ref('board');
-
 const viewProfile = (id: string) => {
   console.log('View profile:', id);
   // Navigate to profile or open modal

@@ -6,8 +6,6 @@
 </template>
 
 <script lang="ts" setup>
-const activeTab = ref('management');
-
 const managementTeam = [
   {
     id: '1',

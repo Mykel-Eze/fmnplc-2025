@@ -78,6 +78,7 @@ export default defineNuxtConfig({
     '@/assets/css/styles.css',
     '@/assets/css/home.css',
     '@/assets/css/about.css',
+    '@/assets/css/sustainability.css',
   ],
   components: [
     {

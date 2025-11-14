@@ -314,7 +314,7 @@ const verticals = [
 const sustainabilityLinks = [
   { label: 'Purpose', href: '/sustainability/purpose' },
   { label: 'Our Approach', href: '/sustainability/approach' },
-  { label: 'Priority Areas', href: '#priority' },
+  { label: 'Priority Areas', href: '/sustainability/priority-areas' },
   { label: 'Reporting', href: '/sustainability/reporting' },
   { label: 'Events', href: '/sustainability/events' }
 ];
