@@ -1,0 +1,290 @@
+/* Container */
+.video-carousel-container {
+    @apply w-full bg-white dark:bg-gray-900 py-12 md:py-16 lg:py-20 overflow-hidden;
+}
+
+.carousel-inner {
+    @apply max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Header */
+.carousel-header {
+    @apply text-center mb-10 md:mb-12;
+}
+
+.carousel-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.carousel-subtitle {
+    @apply text-lg md:text-xl text-gray-600 dark:text-gray-400;
+}
+
+/* Carousel Stage */
+.carousel-stage {
+    @apply relative flex items-center justify-center;
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+    @apply absolute top-1/2 -translate-y-1/2 z-20;
+    @apply w-12 h-12 md:w-14 md:h-14 rounded-full;
+    @apply bg-white dark:bg-gray-800 shadow-lg;
+    @apply flex items-center justify-center;
+    @apply text-gray-700 dark:text-gray-300;
+    @apply transition-all duration-300;
+    @apply hover:bg-green-600 hover:text-white;
+    @apply disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-white dark:disabled:hover:bg-gray-800;
+    @apply focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2;
+}
+
+.nav-arrow i {
+    @apply text-xl md:text-2xl;
+}
+
+.nav-arrow-prev {
+    @apply left-2 md:left-4 lg:left-8;
+}
+
+.nav-arrow-next {
+    @apply right-2 md:right-4 lg:right-8;
+}
+
+/* Videos Viewport */
+.videos-viewport {
+    @apply relative w-full overflow-hidden;
+    height: 450px;
+}
+
+@media (min-width: 768px) {
+    .videos-viewport {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .videos-viewport {
+        height: 550px;
+    }
+}
+
+/* Videos Track */
+.videos-track {
+    @apply absolute top-0 left-0 h-full flex items-center;
+    will-change: transform;
+}
+
+/* Video Card */
+.video-card {
+    @apply absolute top-0 h-full flex items-center justify-center cursor-pointer;
+    width: 70%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 1023px) {
+    .video-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-card {
+        width: 100%;
+    }
+}
+
+/* Slide States */
+.slide-active {
+    @apply z-30;
+    transform: translateX(0) scale(1);
+    opacity: 1;
+}
+
+.slide-prev {
+    @apply z-20;
+    transform: translateX(-85%) scale(0.85);
+    opacity: 0.7;
+    filter: brightness(0.7);
+}
+
+.slide-next {
+    @apply z-20;
+    transform: translateX(85%) scale(0.85);
+    opacity: 0.7;
+    filter: brightness(0.7);
+}
+
+.slide-far-prev {
+    @apply z-10;
+    transform: translateX(-170%) scale(0.7);
+    opacity: 0.3;
+    filter: brightness(0.5);
+}
+
+.slide-far-next {
+    @apply z-10;
+    transform: translateX(170%) scale(0.7);
+    opacity: 0.3;
+    filter: brightness(0.5);
+}
+
+.slide-hidden {
+    @apply z-0;
+    transform: translateX(200%) scale(0.5);
+    opacity: 0;
+}
+
+/* Prevent clicks on non-active slides from playing */
+.video-card:not(.slide-active) .play-button {
+    pointer-events: none;
+}
+
+/* Video Content */
+.video-content {
+    @apply relative w-full h-full;
+}
+
+/* Thumbnail View */
+.video-thumbnail-view {
+    @apply relative w-full h-full rounded-xl overflow-hidden bg-gray-900;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.video-thumbnail {
+    @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.thumbnail-overlay {
+    @apply absolute inset-0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.4) 30%,
+            rgba(0, 0, 0, 0.1) 50%,
+            transparent 100%);
+}
+
+/* Play Button */
+.play-button-wrapper {
+    @apply absolute inset-0 flex items-center justify-center;
+}
+
+.play-button {
+    @apply relative w-16 h-16 md:w-20 md:h-20 rounded-full;
+    @apply bg-white/90 backdrop-blur-sm;
+    @apply flex items-center justify-center;
+    @apply transition-all duration-300;
+    @apply hover:bg-white hover:scale-110;
+    @apply focus:outline-none focus:ring-4 focus:ring-white/50;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.play-button i {
+    @apply text-2xl md:text-3xl text-green-600 ml-1;
+}
+
+/* Video Info */
+.video-info {
+    @apply absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.video-title {
+    @apply text-xl md:text-2xl lg:text-3xl font-bold mb-2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.video-role {
+    @apply text-sm md:text-base text-gray-300 mb-1;
+}
+
+.video-company {
+    @apply text-sm md:text-base text-gray-400;
+}
+
+/* Iframe Wrapper */
+.video-iframe-wrapper {
+    @apply relative w-full h-full rounded-xl overflow-hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.video-iframe {
+    @apply absolute inset-0 w-full h-full;
+}
+
+/* Close Button */
+.close-button {
+    @apply absolute top-4 right-4 z-10;
+    @apply w-10 h-10 rounded-full;
+    @apply bg-black/70 backdrop-blur-sm;
+    @apply flex items-center justify-center;
+    @apply text-white transition-all duration-300;
+    @apply hover:bg-black/90 hover:scale-110;
+    @apply focus:outline-none focus:ring-2 focus:ring-white/50;
+}
+
+.close-button i {
+    @apply text-lg;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+    @apply flex items-center justify-center gap-2 mt-8 md:mt-10;
+}
+
+.carousel-dot {
+    @apply w-2 h-2 md:w-3 md:h-3 rounded-full;
+    @apply bg-gray-300 dark:bg-gray-700;
+    @apply transition-all duration-300;
+    @apply hover:bg-gray-400 dark:hover:bg-gray-600;
+    @apply focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2;
+}
+
+.carousel-dot.active {
+    @apply bg-green-600 dark:bg-green-500;
+    @apply w-8 md:w-10;
+    @apply rounded-full;
+}
+
+/* Dark Mode Adjustments */
+.dark .nav-arrow:not(:disabled):hover {
+    @apply bg-green-500 text-white;
+}
+
+.dark .play-button {
+    @apply bg-gray-800/90;
+}
+
+.dark .play-button:hover {
+    @apply bg-gray-700;
+}
+
+.dark .play-button i {
+    @apply text-green-500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+    .videos-viewport {
+        @apply px-4;
+    }
+
+    .slide-prev,
+    .slide-next,
+    .slide-far-prev,
+    .slide-far-next {
+        @apply hidden;
+    }
+
+    .video-info {
+        @apply p-4;
+    }
+
+    .video-title {
+        @apply text-lg;
+    }
+
+    .video-role,
+    .video-company {
+        @apply text-xs;
+    }
+}
