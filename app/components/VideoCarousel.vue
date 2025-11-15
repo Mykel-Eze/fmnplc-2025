@@ -196,7 +196,7 @@ const trackStyle = computed(() => {
 
 // Methods
 const getThumbnailUrl = (youtubeId: string) => {
-  return `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+  return `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
 };
 
 const handleImageError = (event: Event, video: Video) => {

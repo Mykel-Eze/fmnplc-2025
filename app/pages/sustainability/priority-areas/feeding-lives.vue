@@ -138,7 +138,7 @@
           <div class="">
             <div class="sorghum-image mb-5">
               <img 
-                src="@/assets/images/nnfm.jpg" 
+                src="@/assets/images/NNFM.jpg" 
                 alt="Sorghum Mill in Kano"
                 class="rounded-lg shadow-lg w-full h-auto"
               />
