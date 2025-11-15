@@ -266,8 +266,8 @@ const mainNavItems = [
   { label: 'About', href: '/about', hasDropdown: false },
   { label: 'FMN Verticals', href: '#verticals', hasDropdown: true },
   { label: 'Sustainability', href: '#sustainability', hasDropdown: true },
-  { label: 'CSR', href: '#csr', hasDropdown: false },
-  { label: 'Our FMN Stories', href: '#stories', hasDropdown: false },
+  { label: 'CSR', href: '/csr', hasDropdown: false },
+  { label: 'Investors', href: '#investors', hasDropdown: false },
   { label: 'Latest News', href: '#news', hasDropdown: false },
   { label: 'Careers', href: '#careers', hasDropdown: false },
 ];
@@ -277,31 +277,31 @@ const verticals = [
     name: 'Golden Penny Foods',
     description: 'Manufacturer of flour, pasta, noodles, and other consumer food products',
     icon: 'pi pi-building',
-    href: '#golden-penny'
+    href: 'https://www.fmnfoods.com/'
   },
   {
     name: 'FMN Agro',
     description: 'Supporting local farmers with agricultural inputs, technical assistance',
     icon: 'pi pi-chart-line',
-    href: '#fmn-agro'
+    href: 'https://www.fmnagro.com/'
   },
   {
     name: 'Golden Sugar Company',
     description: 'Producing high-quality refined sugar while promoting sustainable sugar cultivation',
     icon: 'pi pi-building',
-    href: '#golden-sugar'
+    href: 'https://goldensugarng.com/'
   },
   {
     name: 'BAGCO Packing Solutions',
     description: 'Manufacturing innovative packaging solutions for products',
     icon: 'pi pi-box',
-    href: '#bagco'
+    href: 'https://bagco-ng.com/'
   },
   {
     name: 'FMN Infrastructure',
     description: 'Apapa Bulk Terminal: Operating state-of-the-art port facilities',
     icon: 'pi pi-building',
-    href: '#infrastructure'
+    href: 'https://apapabulk.com/'
   },
   {
     name: 'FMN Holdings',
