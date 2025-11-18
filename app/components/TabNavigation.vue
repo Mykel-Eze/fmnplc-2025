@@ -44,6 +44,7 @@ const isActiveTab = (tabRoute: string) => {
   max-width: fit-content;
   margin: 0 auto;
   padding: 8px;
+  border-radius: 8px;
 }
 .tab-button {
   font-weight: 600;

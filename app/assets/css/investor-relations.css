@@ -1,0 +1,73 @@
+/*---=== Tab Styles ===---*/
+.p-tablist {
+    background: none;
+}
+.p-tablist-content {
+    width: 100%;
+} 
+.p-tablist-tab-list {
+    border: none;
+    justify-content: center;
+    background-color: rgba(235, 235, 235, 1);
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 8px;
+    gap: 12px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+#investors-page .p-tablist-nav-button {
+    display: none;
+}
+.dark-mode .p-tablist-tab-list {
+    background-color: #1f2937;
+}
+button.p-tab {
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    padding: 10px 18px;
+    height: 48px;
+    border-radius: 4px;
+    color: black;
+    line-height: 2;
+}
+button.p-tab:hover {
+    background-color: #f3f4f6 !important;
+    color: var(--pry-color) !important;
+}
+.dark-mode button.p-tab {
+    color: white;
+}
+.dark-mode button.p-tab:hover {
+    background-color: #374151 !important;
+    color: whitesmoke !important;
+}
+:not(.dark-mode) button.p-tab.p-tab-active {
+    background-color: var(--pry-color) !important;
+    color: #ffffff !important;
+}
+
+/*---=== Accordion Styles ===---*/
+:root:not(.dark-mode) .reports-accordion-wrapper .p-accordionheader {
+    background-color: rgba(220, 223, 222, 1) !important;
+    color: rgba(52, 52, 52, 1) !important;
+}
+#investors-page .p-tabpanels {
+    background-color: transparent !important;
+}
+:root:not(.dark-mode) .p-accordionpanel .p-accordionheader-toggle-icon {
+    color: rgba(52, 52, 52, 1) !important;
+}
+
+.dark-mode .ceo-quote {
+    background-color: #1f2937;
+    color: whitesmoke;
+}
+.dark-mode .ceo-quote p {
+    color: whitesmoke;
+}
+.dark-mode .ceo-details * {
+    color: white;
+}
