@@ -7,7 +7,7 @@
     />
 
     <!-- Approach Content -->
-    <section class="approach-content py-16 px-4 sm:px-6 lg:px-8">
+    <section class="approach-content pt-16 pb-1 sm:py-16 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
         <div class="mb-14">
           <div class="approach-section mb-8 p-6 border-l-4 border-green-700 bg-gray-50 rounded-lg">
@@ -23,18 +23,44 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 items-center">
+    <section>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-center items-center mt-12">
             <img
-              src="@/assets/images/sdg-group.png"
-              alt="SDG goals"
-            />
-            <img
-              src="@/assets/images/sdg-scale.png"
-              alt="4 Pillar Framework: Governance, Economic, Environmental, Social"
+              src="@/assets/images/gese-image.png"
+              alt="GESE"
+              class="w-full sm:w-[80%]"
             />
         </div>
       </div>
+    </section>
+
+    <div class="section-divider-wrapper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <hr class="section-divider">
+            <span>Brand Statements</span>
+            <hr class="section-divider">
+        </div>
+    </div>
+
+    <section class="my-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="sdg-grid-wrapper">
+                <img src="@/assets/images/sdg/sdg-1.png" alt="sdg" class="sdg-img">
+                <img src="@/assets/images/sdg/sdg-2.png" alt="sdg" class="sdg-img">
+                <img src="@/assets/images/sdg/sdg-3.png" alt="sdg" class="sdg-img">
+                <img src="@/assets/images/sdg/sdg-4.png" alt="sdg" class="sdg-img">
+                <img src="@/assets/images/sdg/sdg-5.png" alt="sdg" class="sdg-img">
+                <img src="@/assets/images/sdg/sdg-6.png" alt="sdg" class="sdg-img">
+                <img src="@/assets/images/sdg/sdg-9.png" alt="sdg" class="sdg-img">
+                <img src="@/assets/images/sdg/sdg-12.png" alt="sdg" class="sdg-img">
+                <img src="@/assets/images/sdg/sdg-13.png" alt="sdg" class="sdg-img">
+                <img src="@/assets/images/sdg/sdg-17.png" alt="sdg" class="sdg-img">
+            </div>
+        </div>
     </section>
 
     <!-- Newsletter -->
