@@ -41,7 +41,7 @@
     <div class="section-divider-wrapper">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <hr class="section-divider">
-            <span>Brand Statements</span>
+            <span>FMN SDGs</span>
             <hr class="section-divider">
         </div>
     </div>
