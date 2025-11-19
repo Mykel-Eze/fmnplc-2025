@@ -269,7 +269,7 @@ const mainNavItems = [
   { label: 'CSR', href: '/csr', hasDropdown: false },
   { label: 'Investors', href: '/investor-relations', hasDropdown: false },
   { label: 'Latest News', href: '#news', hasDropdown: false },
-  { label: 'Careers', href: '#careers', hasDropdown: false },
+  { label: 'Careers', href: '/careers', hasDropdown: false },
 ];
 
 const verticals = [
