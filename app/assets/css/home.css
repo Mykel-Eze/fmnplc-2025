@@ -7,11 +7,11 @@
 .dark-mode .hero-section {
     background-color: #000000;
 }
-.p-carousel-content {
+.hero-section .p-carousel-content {
     height: calc(100vh - 4rem);
     min-height: 600px;
 }
-.p-carousel-item {
+.hero-section .p-carousel-item {
     height: 100%;
 }
 .hero-cta-button {

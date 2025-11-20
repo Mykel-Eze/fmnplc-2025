@@ -192,6 +192,179 @@ section#fmn-family .fmn-family-block:nth-child(6) {
     box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.1);
 }
 
+.review-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    margin: 20px auto;
+}
+.review-box {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    /* padding: 20px 20px 30px; */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 15px;
+    color: rgba(17, 17, 17, 1);
+}
+.review-box:nth-child(1) {
+    background-color: #fe9500;
+}
+.review-box:nth-child(2) {
+    background-color: #eb1941;
+}
+.review-box:nth-child(3) {
+    background-color: #c5489b;
+}
+.review-box:nth-child(4) {
+    background-color: #10a6e1;
+}
+.review-box:nth-child(5) {
+    background-color: #80c442;
+}
+.reviewer-img {
+    width: 100%;
+    height: 240px;
+    background-color: lightgray;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    cursor: pointer;
+    transition: all 1.5s;
+    position: relative;
+}
+.reviewer-img img.person-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    z-index: 1;
+}
+.careers-play-button {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 1.5s;   
+    z-index: 3; 
+}
+
+.reviewer-img::before {
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1.5s;
+    z-index: 2;
+}
+.reviewer-img:hover::before {
+    background-color: transparent;
+}
+.reviewer-name {
+    font-size: 1.2rem;
+    font-family: var(--font);
+    letter-spacing: -1px;
+    line-height: 1;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.p-carousel-content .p-button {
+    display: none;
+}
+#testimonials button.p-carousel-indicator-button {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(211, 211, 211, 1);
+}
+#testimonials .p-carousel-indicator-active button.p-carousel-indicator-button {
+    background-color: rgba(128, 128, 128, 1);
+}
+.p-dialog.p-component.video-modal {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+.p-dialog-header {
+    padding: 1.25rem 0;
+}
+.p-dialog-header-actions {
+    background-color: black;
+}
+.p-dialog-header-actions button {
+    border-radius: 0 !important;
+}
+.p-dialog-content  {
+    background-color: black;
+}
+
+.career-link-arrows {
+    width: 50px;
+    margin: auto;
+}
+#career-notice .portal-btn-div.flex-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+#career-notice .portal-btn-div a.pbd-link {
+    height: 100%;
+    border-radius: 12px;
+    text-align: left;
+    padding-bottom: 20px;
+    color: white;
+    overflow: hidden;
+}
+#career-notice a.pbd-link:nth-child(1) {
+    background-color: rgba(182, 132, 62, 1);
+}
+#career-notice a.pbd-link:nth-child(2) {
+    background-color: rgba(0, 123, 71, 1);
+}
+#career-notice a.pbd-link:nth-child(3) {
+    background-color: rgba(128, 196, 66, 1);
+}
+.portal-btn-title {
+    font-size: 14px;
+    font-family: var(--font-bold);
+    padding: 10px 16px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.portal-btn-items {
+    padding: 20px 15px;
+    font-size: 12px;
+}
+.portal-btn-items ul {
+    display: grid;
+    gap: 10px;
+    padding-left: 20px;
+}
+.portal-btn-items ul li {
+    list-style-type: disc;
+}
+.flex-div.career-apply {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+}
+.flex-div.career-apply > span,
+.flex-div.career-apply > i.material-icons {
+    top: -1px !important;
+}
+
 @media(max-width: 992px) {
     #fmn-family-2 .fmn-family-lists {
         grid-template-columns: 1fr 1fr 1fr;
@@ -206,6 +379,9 @@ section#fmn-family .fmn-family-block:nth-child(6) {
     #fmn-family-2 .fmn-family-lists {
         grid-template-columns: 1fr 1fr;
     }
+    .review-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media(max-width: 640px) {
@@ -218,5 +394,12 @@ section#fmn-family .fmn-family-block:nth-child(6) {
     }
     .piilot-wrapper {
         grid-template-columns: 100%;
+    }
+    #career-notice .portal-btn-div.flex-div {
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+    .review-wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

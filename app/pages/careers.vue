@@ -331,11 +331,255 @@
         </div>
     </section>
     <!--=== end of Core-Values Section ===-->
+
+    <section id="testimonials">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-6">
+                <h4 class="section-title core-heading">Meet Our People</h4>
+                <p>
+                    For 60 years, FMN has remained at the heart of
+                    this great Nation, enriching lives and
+                    empowering communities, just as our Golden Penny
+                    products have stayed at the heart of millions of
+                    Nigerian families, providing nourishment daily.
+                    As expected our story will not be complete
+                    without the tireless contributions of our
+                    passionate employees across the country, who are
+                    an integral part of how FMN is fulfilling its
+                    purpose of 'Feeding and Enriching Lives, Every
+                    Day'. See what our people have to say about our
+                    60 years anniversary.
+                </p>
+            </div>
+
+            <Carousel
+                :value="carouselSlides"
+                :numVisible="1"
+                :numScroll="1"
+                :showNavigators="true"
+                :showIndicators="true"
+            >
+                <template #item="slotProps">
+                    <div class="review-wrapper">
+                        <div
+                            v-for="person in slotProps.data"
+                            :key="person.modalTarget"
+                            class="review-box"
+                        >
+                            <div
+                                class="reviewer-img"
+                                @click="openModal(person.modalTarget)"
+                                style="cursor: pointer"
+                            >
+                                <img
+                                    :src="person.image"
+                                    :alt="person.name"
+                                    class="person-image"
+                                />
+
+                                <img
+                                    src="@/assets/images/careers-play-button.svg"
+                                    alt="play-button"
+                                    class="careers-play-button"
+                                />
+                            </div>
+                            <div class="reviewer-name">
+                                <span>{{ person.name }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </Carousel>
+        </div>
+    </section>
+
+    <section id="career-notice" class="my-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h4 class="section-title core-heading !mb-5">Explore Career Paths With Us</h4>
+            <div class="portal-btn-div flex-div mb-8">
+                <a
+                    rel="noopener"
+                    href="https://forms.gle/i9cqPhVq8BvxCdUY6"
+                    target="_blank"
+                    class="pbd-link rel hover-scale"
+                >
+                    <div class="portal-btn-body">
+                        <div class="portal-btn-title">Early Careers</div>
+                        <div class="portal-btn-items">
+                            <ul>
+                                <li>FMN Inclusive Internship Initiative (IT SIWES included)</li>
+                                <li>Graduate Trainee</li>
+                            </ul>
+                        </div>
+                        <div class="flex-div career-apply">
+                            <span>APPLY</span>
+                            <span style="font-size: 20px; position: relative;">&rsaquo;</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- <img src="../assets/images/arr-purple.png" alt="arrow" class="career-link-arrows"> -->
+                <a
+                    rel="noopener"
+                    href="https://fmnplc.e-recruiter.ng/"
+                    target="_blank"
+                    class="pbd-link rel hover-scale"
+                >
+                    <div class="portal-btn-body">
+                        <div class="portal-btn-title">Experiences Professionals</div>
+                        <div class="portal-btn-items">
+                            <ul>
+                                <li>Open Vacancies</li>
+                            </ul>
+                        </div>
+                        <div class="flex-div career-apply">
+                            <span>APPLY</span>
+                            <span style="font-size: 20px; position: relative;">&rsaquo;</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- <img src="../assets/images/arr-blue.png" alt="arrow" class="career-link-arrows"> -->
+                <a
+                    rel="noopener"
+                    href="https://fmnplc.e-recruiter.ng/"
+                    target="_blank"
+                    class="pbd-link rel hover-scale"
+                >
+                    <div class="portal-btn-body">
+                        <div class="portal-btn-title">Technical Vocational</div>
+                        <div class="portal-btn-items">
+                            <ul>
+                                <li>Operators</li>
+                                <li>Technicians</li>
+                            </ul>
+                        </div>
+                        <div class="flex-div career-apply">
+                            <span>APPLY</span>
+                            <span style="font-size: 20px; position: relative;">&rsaquo;</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div>
+                <p class="text-base">
+                    FMN offers equal employment opportunity and we do not
+                    discriminate on the basis of race, religion, color, sex,
+                    gender identity, sexual orientation, age,
+                    non-disqualifying physical or mental disability,
+                    national origin, veteran status or any other basis
+                    covered by appropriate law.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--=== Video Modal ===-->
+    <Dialog
+        v-model:visible="videoModalVisible"
+        :modal="true"
+        :closable="true"
+        :dismissableMask="true"
+        class="video-modal"
+        @hide="stopVideo"
+        :style="{ width: '80vw', maxWidth: '800px' }"
+        :contentStyle="{ padding: 0, height: '70vh' }"
+    >
+        <template #header>
+            <span></span>
+        </template>
+        <div class="video-container">
+            <iframe
+                v-if="currentVideoUrl"
+                :key="currentVideoUrl"
+                width="100%"
+                height="100%"
+                :src="currentVideoUrl"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </Dialog>
+    <!--=== end of Video Modal ===-->
   </div>
 </template>
 
 <script lang="ts" setup>
+// Video URLs mapping
+const videoUrls: Record<string, string> = {
+    'career-1': 'https://www.youtube.com/embed/n1RZv--7-L8?controls=0',
+    'career-2': 'https://www.youtube.com/embed/JxXHG9-868E?controls=0',
+    'career-3': 'https://www.youtube.com/embed/_fUUQHk1MVs?controls=0',
+    'career-4': 'https://www.youtube.com/embed/k3HMV_D7deo?controls=0',
+    'career-5': 'https://www.youtube.com/embed/cRhgu3cQ2u8?controls=0',
+    'career-6': 'https://www.youtube.com/embed/OkQNrZqZm3s?controls=0',
+    'career-7': 'https://www.youtube.com/embed/glgd_1M9Xbc?controls=0',
+    'career-8': 'https://www.youtube.com/embed/15acRaGIOB0?controls=0',
+    'career-9': 'https://www.youtube.com/embed/GFGg67imKaA?controls=0',
+    'career-10': 'https://www.youtube.com/embed/SFwghDrWBGQ?controls=0'
+};
 
+// Carousel data - two slides with 5 people each
+const carouselSlides = ref([
+    // Slide 1
+    [
+        { name: 'Huzinat Shidi', cssClass: 'hs', modalTarget: 'career-1', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Huzinat-Shidi.jpg' },
+        { name: 'Ani Obinna', cssClass: 'ao', modalTarget: 'career-2', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Ani-Obinna.jpg' },
+        { name: 'Ajoke Titoneye', cssClass: 'at', modalTarget: 'career-3', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Ajoke-Titoneye.jpg' },
+        { name: 'Dada Temitope', cssClass: 'dt', modalTarget: 'career-4', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Dada-Temitope.jpg'},
+        { name: 'Rita Tsehai', cssClass: 'rt', modalTarget: 'career-5', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Rita-Tsehai.jpg' }
+    ],
+    // Slide 2
+    [
+        { name: 'Babatola Ibrahim', cssClass: 'bi', modalTarget: 'career-6', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Babatola-Ibrahim.jpg' },
+        { name: 'Bukola Farai', cssClass: 'bf', modalTarget: 'career-7', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Bukola-Farai.jpg' },
+        { name: 'Godspower Uwadiare', cssClass: 'gu', modalTarget: 'career-8', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Godspower-Uwadiare.jpg' },
+        { name: 'Janet Olasupo', cssClass: 'jo', modalTarget: 'career-9', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Janet-Olasupo.jpg' },
+        { name: 'Sarumi Bisola', cssClass: 'sb', modalTarget: 'career-10', image:'https://flourmills.s3.eu-central-1.amazonaws.com/images/careers-photos/Sarumi-Bisola.jpg' }
+    ]
+]);
+
+// Modal state
+const videoModalVisible = ref(false);
+const currentVideoUrl = ref('');
+
+// Open modal with video
+const openModal = (modalId: string) => {
+    currentVideoUrl.value = videoUrls[modalId] || '';
+    videoModalVisible.value = true;
+};
+
+// Stop video when modal closes
+const stopVideo = () => {
+    currentVideoUrl.value = '';
+};
 </script>
 
 <style src="@/assets/css/careers.css"></style>
+
+<style scoped>
+.video-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.video-container iframe {
+    display: block;
+}
+
+/* Override PrimeVue Dialog styles for video modal */
+.video-modal .p-dialog-header {
+    padding: 0.5rem 1rem;
+    background: transparent;
+}
+
+.video-modal .p-dialog-content {
+    background: #000;
+    border-radius: 0;
+}
+
+.video-modal {
+    overflow: visible;
+}
+</style>
