@@ -153,7 +153,7 @@ section#sec-home > .hero-image-wrapper {
     }
 }
 @media (max-width: 600px) {
-    section#sec-home {
+    section#sec-home > .hero-image-wrapper {
         background-image: url(/careers-video-banner-3.png);
     }
     #vid-details h4 {
