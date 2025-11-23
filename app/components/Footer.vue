@@ -8,12 +8,12 @@
           <h3 class="footer-heading">Company</h3>
           <ul class="space-y-3">
             <li v-for="link in companyLinks" :key="link.label">
-              <a
-                :href="link.href"
+              <NuxtLink
+                :to="link.href"
                 class="footer-link text-sm transition-colors"
               >
                 {{ link.label }}
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -23,12 +23,12 @@
           <h3 class="footer-heading">Investors</h3>
           <ul class="space-y-3">
             <li v-for="link in investorLinks" :key="link.label">
-              <a
-                :href="link.href"
+              <NuxtLink
+                :to="link.href"
                 class="footer-link text-sm transition-colors"
               >
                 {{ link.label }}
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -38,12 +38,12 @@
           <h3 class="footer-heading">Media</h3>
           <ul class="space-y-3">
             <li v-for="link in mediaLinks" :key="link.label">
-              <a
-                :href="link.href"
+              <NuxtLink
+                :to="link.href"
                 class="footer-link text-sm transition-colors"
               >
                 {{ link.label }}
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -149,19 +149,19 @@
 
         <!-- Legal Links -->
         <div class="flex items-center space-x-4">
-          <a
-            href="#privacy"
+          <NuxtLink
+            to="#privacy"
             class="footer-link text-sm transition-colors"
           >
             Privacy Policy
-          </a>
+          </NuxtLink>
           <span class="footer-separator">•</span>
-          <a
-            href="#cookie"
+          <NuxtLink
+            to="#cookie"
             class="footer-link text-sm transition-colors"
           >
             Cookie Policy
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -178,23 +178,23 @@ const languages = [
 ];
 
 const companyLinks = [
-  { label: 'About FMN', href: '#about' },
-  { label: 'Management Team', href: '#management' },
+  { label: 'About FMN', href: '/about' },
+  { label: 'Management Team', href: '/about/management' },
   { label: 'Our Subsidiaries', href: '#subsidiaries' },
-  { label: 'Careers', href: '#careers' }
+  { label: 'Careers', href: '/careers' }
 ];
 
 const investorLinks = [
-  { label: 'Annual Reports', href: '#reports' },
-  { label: 'Sustainability', href: '#sustainability' },
-  { label: 'Events', href: '#events' },
-  { label: 'Policies', href: '#policies' }
+  { label: 'Annual Reports', href: '/investor-relations' },
+  { label: 'Sustainability', href: '/sustainability' },
+  { label: 'Events', href: '/sustainability/events' },
+  { label: 'Policies', href: '/investor-relations' }
 ];
 
 const mediaLinks = [
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Blog', href: '#blog' },
-  { label: 'Press Release', href: '#press' }
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Press Release', href: '/press' }
 ];
 </script>
 

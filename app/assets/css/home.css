@@ -139,6 +139,7 @@ small.vertical-subtitle {
 }
 .vertical-hover-overlay.hovered {
   height: 100% !important;
+  background: linear-gradient(#007B4740, #007B47 70%);
 }
 /* Transitions */
 .fade-slide-enter-active,
