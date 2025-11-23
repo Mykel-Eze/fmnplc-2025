@@ -1,0 +1,252 @@
+/* Back Button */
+.back-btn {
+    color: var(--pry-color);
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.back-btn:hover {
+    color: #166534;
+}
+
+/* Category Badge */
+.category-badge {
+    display: inline-block;
+    background-color: var(--pry-color);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Press Title */
+.press-title {
+    font-size: 38px;
+    line-height: 1.2;
+    font-family: var(--font-bold);
+}
+
+/* Meta Info */
+.press-meta {
+    font-size: 14px;
+}
+
+/* Download Button */
+.download-section {
+    display: flex;
+    gap: 12px;
+}
+.download-btn {
+    background-color: var(--pry-color);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.download-btn:hover {
+    background-color: #166534;
+    color: whitesmoke;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Press Content */
+.press-content {
+    font-size: 17px;
+    line-height: 1.8;
+    font-family: var(--font-regular);
+}
+.content-heading {
+    font-size: 26px;
+    font-family: var(--font-bold);
+    margin-top: 2rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f9fafb;
+}
+.contact-heading {
+    font-size: 18px;
+    font-family: var(--font-bold);
+}
+
+/* Share Section */
+.share-title {
+    font-size: 20px;
+    font-family: var(--font-bold);
+}
+.share-btn {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #e5e7eb;
+    color: #6b7280;
+    transition: all 0.3s ease;
+}
+.share-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.share-btn.facebook {
+    background-color: #1877f2;
+    border-color: #1877f2;
+    color: white;
+}
+.share-btn.twitter {
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+    color: white;
+}
+.share-btn.linkedin {
+    background-color: #0a66c2;
+    border-color: #0a66c2;
+    color: white;
+}
+.share-btn.email {
+    background-color: var(--pry-color);
+    border-color: var(--pry-color);
+    color: white;
+}
+
+/* Related Press Releases */
+.related-title {
+    font-size: 26px;
+    font-family: var(--font-bold);
+}
+.related-press-item {
+    display: flex;
+    gap: 0;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.related-press-item:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+.related-press-border {
+    width: 6px;
+    background-color: var(--pry-color);
+    flex-shrink: 0;
+}
+.related-press-content {
+    flex: 1;
+    padding: 20px 24px;
+}
+.related-press-title {
+    font-size: 16px;
+    font-family: var(--font-bold);
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+.related-press-date {
+    font-size: 13px;
+}
+
+/* Dark Mode */
+.dark-mode .back-btn {
+    color: #10b981;
+}
+.dark-mode .back-btn:hover {
+    color: #34d399;
+}
+.dark-mode .category-badge {
+    background-color: #10b981;
+}
+.dark-mode .press-title {
+    color: #f3f4f6;
+}
+.dark-mode .press-meta {
+    border-color: #374151;
+}
+.dark-mode .press-meta i,
+.dark-mode .press-meta span {
+    color: #d1d5db;
+}
+.dark-mode .download-btn {
+    background-color: #10b981;
+}
+.dark-mode .download-btn:hover {
+    background-color: #059669;
+}
+.dark-mode .press-content {
+    color: #d1d5db;
+}
+.dark-mode .content-heading {
+    color: #f3f4f6;
+}
+.dark-mode .contact-section {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+.dark-mode .contact-heading {
+    color: #f3f4f6;
+}
+.dark-mode .contact-section p {
+    color: #d1d5db;
+}
+.dark-mode .share-section {
+    border-color: #374151;
+}
+.dark-mode .share-title {
+    color: #f3f4f6;
+}
+.dark-mode .share-btn {
+    border-color: #374151;
+    color: #9ca3af;
+}
+.dark-mode .share-btn.email:hover {
+    background-color: #10b981;
+    border-color: #10b981;
+}
+.dark-mode .related-title {
+    color: #f3f4f6;
+}
+.dark-mode .related-press-item {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+.dark-mode .related-press-border {
+    background-color: #10b981;
+}
+.dark-mode .related-press-title {
+    color: #f3f4f6;
+}
+.dark-mode .related-press-date {
+    color: #d1d5db;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .press-title {
+        font-size: 28px;
+    }
+    .press-content {
+        font-size: 16px;
+    }
+    .content-heading {
+        font-size: 22px;
+    }
+    .related-title {
+        font-size: 22px;
+    }
+    .press-meta {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .download-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

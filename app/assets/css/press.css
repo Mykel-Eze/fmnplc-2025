@@ -1,0 +1,162 @@
+/* Search Bar */
+.search-bar-wrapper {
+    max-width: 100%;
+}
+.search-bar {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.search-input {
+    flex: 1;
+    border: 1px solid #e5e7eb;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 16px 20px;
+    font-size: 16px;
+    outline: none;
+}
+.search-input:focus {
+    border-color: var(--pry-color);
+}
+.search-btn {
+    background-color: var(--pry-color);
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 48px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+.search-btn:hover {
+    background-color: #166534;
+}
+
+/* Press Releases List */
+.press-releases-list {
+    display: flex;
+    flex-direction: column;
+}
+.press-item {
+    display: flex;
+    gap: 0;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.press-item:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+.press-border {
+    width: 6px;
+    background-color: var(--pry-color);
+    flex-shrink: 0;
+}
+.press-content {
+    flex: 1;
+    padding: 24px 32px;
+}
+.press-title {
+    font-size: 20px;
+    font-family: var(--font-bold);
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+.press-date {
+    font-size: 14px;
+    font-family: var(--font-regular);
+}
+
+/* Load More Button */
+.load-more-btn {
+    background-color: var(--pry-color);
+    color: white;
+    border: none;
+    padding: 14px 48px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 250px;
+}
+.load-more-btn:hover {
+    background-color: #166534;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* No Results */
+.no-results {
+    padding: 48px 0;
+}
+
+/* Dark Mode */
+.dark-mode .search-input {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #f3f4f6;
+}
+.dark-mode .search-input::placeholder {
+    color: #9ca3af;
+}
+.dark-mode .search-input:focus {
+    border-color: #10b981;
+}
+.dark-mode .search-btn {
+    background-color: #10b981;
+}
+.dark-mode .search-btn:hover {
+    background-color: #059669;
+}
+.dark-mode .press-item {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+.dark-mode .press-border {
+    background-color: #10b981;
+}
+.dark-mode .press-title {
+    color: #f3f4f6;
+}
+.dark-mode .press-date {
+    color: #d1d5db;
+}
+.dark-mode .load-more-btn {
+    background-color: #10b981;
+}
+.dark-mode .load-more-btn:hover {
+    background-color: #059669;
+}
+.dark-mode .no-results p {
+    color: #9ca3af;
+}
+.dark-mode .no-results i {
+    color: #4b5563;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-btn {
+        padding: 16px 32px;
+        font-size: 15px;
+    }
+    .press-content {
+        padding: 20px 24px;
+    }
+    .press-title {
+        font-size: 18px;
+    }
+    .press-date {
+        font-size: 13px;
+    }
+}

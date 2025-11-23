@@ -87,7 +87,7 @@ const allBlogPosts = ref([
     date: new Date('2024-11-13'),
     category: 'General',
     image: '/blog/post1.jpg',
-    link: '/blog/details'
+    link: '/blog/1'
   },
   {
     id: 2,
@@ -95,7 +95,7 @@ const allBlogPosts = ref([
     date: new Date('2024-06-21'),
     category: 'General',
     image: '/blog/post2.jpg',
-    link: '/blog/details'
+    link: '/blog/2'
   },
   {
     id: 3,
@@ -103,7 +103,7 @@ const allBlogPosts = ref([
     date: new Date('2024-06-21'),
     category: 'Press',
     image: '/blog/post3.jpg',
-    link: '/blog/details'
+    link: '/blog/3'
   },
   {
     id: 4,
@@ -111,7 +111,7 @@ const allBlogPosts = ref([
     date: new Date('2023-10-11'),
     category: 'CSR',
     image: '/blog/post4.jpg',
-    link: '/blog/details'
+    link: '/blog/4'
   },
   // Add more posts here to test pagination
   {
@@ -120,7 +120,7 @@ const allBlogPosts = ref([
     date: new Date('2024-05-15'),
     category: 'Sustainability',
     image: '/blog/post3.jpg',
-    link: '/blog/details'
+    link: '/blog/5'
   },
   {
     id: 6,
@@ -128,7 +128,7 @@ const allBlogPosts = ref([
     date: new Date('2024-04-20'),
     category: 'AGM',
     image: '/blog/post4.jpg',
-    link: '/blog/details'
+    link: '/blog/6'
   },
   {
     id: 7,
@@ -136,7 +136,7 @@ const allBlogPosts = ref([
     date: new Date('2024-05-15'),
     category: 'AGM',
     image: '/blog/post3.jpg',
-    link: '/blog/details'
+    link: '/blog/7'
   },
   {
     id: 8,
@@ -144,7 +144,7 @@ const allBlogPosts = ref([
     date: new Date('2024-04-20'),
     category: 'Press',
     image: '/blog/post4.jpg',
-    link: '/blog/details'
+    link: '/blog/8'
   },
   {
     id: 9,
@@ -152,7 +152,7 @@ const allBlogPosts = ref([
     date: new Date('2024-04-20'),
     category: 'Press',
     image: '/blog/post4.jpg',
-    link: '/blog/details'
+    link: '/blog/9'
   },
   // Add more sample posts to demonstrate pagination...
 ]);

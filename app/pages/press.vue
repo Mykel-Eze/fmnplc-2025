@@ -1,15 +1,5 @@
 <template>
-  <div id="press-page">
-    <!-- Hero Banner -->
-    <PageHeroBanner
-      title="Press Release"
-      background-image="/other-banners/press.png"
-    />
+  <div class="press-pages-container">
+    <NuxtPage />
   </div>
 </template>
-
-<script lang="ts" setup>
-
-</script>
-
-<style></style>

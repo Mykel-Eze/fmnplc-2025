@@ -155,11 +155,11 @@
       <div class="related-posts mt-16">
         <h3 class="related-title text-gray-900 mb-8">Related Articles</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div
+          <NuxtLink
             v-for="post in relatedPosts"
             :key="post.id"
+            :to="post.link"
             class="related-card group cursor-pointer"
-            @click="loadPost(post.id)"
           >
             <div class="related-image-wrapper rounded-lg overflow-hidden mb-4">
               <img
@@ -170,7 +170,7 @@
             </div>
             <h4 class="related-card-title text-gray-900 mb-2">{{ post.title }}</h4>
             <p class="text-gray-600 text-sm">{{ formatDate(post.date) }}</p>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -197,19 +197,22 @@ const relatedPosts = ref([
     id: 2,
     title: 'How FMN Is at The Forefront of Driving Food Security in Nigeria',
     date: new Date('2024-06-21'),
-    image: '/blog/post2.jpg'
+    image: '/blog/post2.jpg',
+    link: '/blog/2'
   },
   {
     id: 3,
     title: 'FMN Wins Prestigious Global Brand Award 2024',
     date: new Date('2024-06-21'),
-    image: '/blog/post3.jpg'
+    image: '/blog/post3.jpg',
+    link: '/blog/3'
   },
   {
     id: 4,
     title: 'FMN Women Network Drives Gender Parity and Inclusion',
     date: new Date('2023-10-11'),
-    image: '/blog/post4.jpg'
+    image: '/blog/post4.jpg',
+    link: '/blog/4'
   }
 ]);
 
