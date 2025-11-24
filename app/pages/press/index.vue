@@ -15,6 +15,7 @@
                         v-model="searchQuery"
                         placeholder="Search"
                         class="search-input"
+                        @input="handleSearch"
                         @keyup.enter="handleSearch"
                     />
                     <Button
