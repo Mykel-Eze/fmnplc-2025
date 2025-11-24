@@ -257,21 +257,13 @@
 .dark-mode .fmn-badge {
     background-color: #10b981;
 }
-.dark-mode .galleria-header h3 {
-    color: #f3f4f6;
-}
-.dark-mode .galleria-header p {
-    color: #d1d5db;
-}
 .dark-mode #gallery-page :deep(.p-accordionheader) {
     background-color: #10b981;
 }
 .dark-mode #gallery-page :deep(.p-accordionheader:hover) {
     background-color: #059669;
 }
-.dark-mode p {
-    color: #d1d5db;
-}
+
 
 /* Responsive */
 @media (max-width: 768px) {
