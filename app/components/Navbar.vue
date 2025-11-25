@@ -10,16 +10,67 @@
 
         <!-- Desktop Navigation -->
         <nav class="!hidden lg:!flex items-center space-x-1">
-          <NuxtLink
+          <div
             v-for="item in mainNavItems"
             :key="item.label"
-            :to="item.href"
-            class="nav-link px-4 py-2 text-[12px] font-medium transition-colors"
-            @mouseenter="item.hasDropdown ? showDropdown(item.label) : null"
-            @mouseleave="item.hasDropdown ? hideDropdown() : null"
+            class="nav-item-wrapper relative"
           >
-            {{ item.label }}
-          </NuxtLink>
+            <NuxtLink
+              :to="item.href"
+              class="nav-link px-4 py-2 text-[12px] font-medium transition-colors block"
+              @mouseenter="item.hasDropdown ? showDropdown(item.label) : null"
+              @mouseleave="item.hasDropdown ? hideDropdown() : null"
+            >
+              {{ item.label }}
+            </NuxtLink>
+            <div v-if="item.hasDropdown && activeDropdown === item.label" class="triangle"></div>
+
+            <!-- Sustainability Dropdown (positioned under link) -->
+            <Transition name="dropdown">
+              <div
+                v-if="item.label === 'Sustainability' && activeDropdown === 'Sustainability'"
+                @mouseenter="showDropdown('Sustainability')"
+                @mouseleave="hideDropdown()"
+                class="dropdown-menu absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[200px] border-t z-50"
+              >
+                <div class="dm-bg py-4 rounded-lg">
+                  <div class="grid grid-cols-1">
+                    <NuxtLink
+                      v-for="sustItem in sustainabilityLinks"
+                      :key="sustItem.label"
+                      :to="sustItem.href"
+                      class="sustainability-link py-3 transition-colors font-medium px-3 sm:px-4 lg:px-6"
+                    >
+                      {{ sustItem.label }}
+                    </NuxtLink>
+                  </div>
+                </div>
+              </div>
+            </Transition>
+
+            <!-- Media Dropdown (positioned under link) -->
+            <Transition name="dropdown">
+              <div
+                v-if="item.label === 'Media' && activeDropdown === 'Media'"
+                @mouseenter="showDropdown('Media')"
+                @mouseleave="hideDropdown()"
+                class="dropdown-menu absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[200px] border-t z-50"
+              >
+                <div class="dm-bg py-4 rounded-lg">
+                  <div class="grid grid-cols-1">
+                    <NuxtLink
+                      v-for="mediaItem in mediaLinks"
+                      :key="mediaItem.label"
+                      :to="mediaItem.href"
+                      class="media-link py-3 transition-colors font-medium px-3 sm:px-4 lg:px-6"
+                    >
+                      {{ mediaItem.label }}
+                    </NuxtLink>
+                  </div>
+                </div>
+              </div>
+            </Transition>
+          </div>
         </nav>
 
         <!-- Desktop Actions -->
@@ -55,16 +106,18 @@
       </div>
     </div>
 
+
+
     <!-- FMN Verticals Mega Menu (Desktop) -->
     <Transition name="dropdown">
       <div
         v-if="activeDropdown === 'FMN Verticals'"
         @mouseenter="showDropdown('FMN Verticals')"
         @mouseleave="hideDropdown()"
-        class="dropdown-menu absolute left-0 right-0 shadow-lg border-t"
+        class="dropdown-menu absolute left-0 right-0 border-t max-w-3xl mx-auto"
       >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <h3 class="dropdown-title text-green-700 font-semibold text-lg mb-6">Business Verticals</h3>
+        <div class="dm-bg max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <h3 class="dropdown-title pry-color smbold-txt text-lg mb-6">Business Verticals</h3>
           <div class="grid grid-cols-2 gap-6">
             <NuxtLink
               v-for="vertical in verticals"
@@ -82,7 +135,7 @@
                   </h4>
                   <i class="pi pi-arrow-right text-sm text-gray-400 group-hover:text-green-700"></i>
                 </div>
-                <p class="vertical-description text-sm mt-1">{{ vertical.description }}</p>
+                <p class="vertical-description mt-1">{{ vertical.description }}</p>
               </div>
             </NuxtLink>
           </div>
@@ -90,28 +143,6 @@
       </div>
     </Transition>
 
-    <!-- Sustainability Dropdown Menu (Desktop) -->
-    <Transition name="dropdown">
-      <div
-        v-if="activeDropdown === 'Sustainability'"
-        @mouseenter="showDropdown('Sustainability')"
-        @mouseleave="hideDropdown()"
-        class="dropdown-menu absolute left-0 right-0 shadow-lg border-t"
-      >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div class="grid grid-cols-1 gap-3 max-w-xs">
-            <NuxtLink
-              v-for="item in sustainabilityLinks"
-              :key="item.label"
-              :to="item.href"
-              class="sustainability-link px-4 py-3 rounded-lg transition-colors font-medium"
-            >
-              {{ item.label }}
-            </NuxtLink>
-          </div>
-        </div>
-      </div>
-    </Transition>
 
     <!-- Mobile Sidebar -->
     <Sidebar v-model:visible="mobileMenuOpen" position="right" class="mobile-sidebar w-80">
@@ -183,6 +214,20 @@
                 class="mobile-submenu-link block px-4 py-3 text-sm rounded-lg"
               >
                 {{ sustItem.label }}
+              </NuxtLink>
+            </div>
+          </Transition>
+
+          <!-- Mobile Submenu for Media -->
+          <Transition name="expand">
+            <div v-if="item.label === 'Media' && item.hasDropdown && mobileDropdownOpen === item.label" class="mt-2 ml-4 space-y-2">
+              <NuxtLink
+                v-for="mediaItem in mediaLinks"
+                :key="mediaItem.label"
+                :to="mediaItem.href"
+                class="mobile-submenu-link block px-4 py-3 text-sm rounded-lg"
+              >
+                {{ mediaItem.label }}
               </NuxtLink>
             </div>
           </Transition>
@@ -268,8 +313,8 @@ const mainNavItems = [
   { label: 'Sustainability', href: '#sustainability', hasDropdown: true },
   { label: 'CSR', href: '/csr', hasDropdown: false },
   { label: 'Investors', href: '/investor-relations', hasDropdown: false },
-  // { label: 'Latest News', href: '/press', hasDropdown: false },
   { label: 'Careers', href: '/careers', hasDropdown: false },
+  { label: 'Media', href: '#media', hasDropdown: true },
   { label: 'Contact', href: '/contact', hasDropdown: false },
 ];
 
@@ -320,6 +365,12 @@ const sustainabilityLinks = [
   { label: 'Events', href: '/sustainability/events' }
 ];
 
+const mediaLinks = [
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Press Release', href: '/press' }
+];
+
 const socialLinks = [
   { name: 'LinkedIn', icon: 'pi pi-linkedin', href: '#' },
   { name: 'Instagram', icon: 'pi pi-instagram', href: '#' },
@@ -355,3 +406,60 @@ const toggleSearch = () => {
 </script>
 
 <style src="@/assets/css/navbar.css" scoped></style>
+
+<style>
+/* Mobile Sidebar Dark Mode */
+.p-drawer.mobile-sidebar {
+    background-color: white;
+}
+.dark-mode .p-drawer.mobile-sidebar {
+    background-color: rgba(1, 15, 5, 1);
+}
+
+/* PrimeVue Sidebar component internal styling */
+.dark-mode .p-sidebar {
+    background-color: rgba(1, 15, 5, 1) !important;
+    color: #f3f4f6;
+}
+
+.dark-mode .p-sidebar-header {
+    background-color: rgba(1, 15, 5, 1);
+    border-bottom-color: #374151;
+}
+
+.dark-mode .p-sidebar-content {
+    background-color: rgba(1, 15, 5, 1);
+}
+
+.dark-mode .p-sidebar-close {
+    color: #f3f4f6;
+}
+
+.dark-mode .p-sidebar-close:hover {
+    background-color: #374151;
+}
+
+/* Mobile nav button text color */
+.dark-mode .mobile-nav-button .p-button-label {
+    color: #f3f4f6;
+}
+
+.dark-mode .mobile-nav-button .p-button-icon {
+    color: #f3f4f6;
+}
+
+.media-link {
+    color: #111827;
+}
+.media-link:hover {
+    background-color: #f9fafb;
+    color: #15803d;
+}
+.dark-mode .media-link {
+    color: #f3f4f6;
+}
+.dark-mode .media-link:hover {
+    background-color: #374151;
+    color: #10b981;
+}
+</style>
