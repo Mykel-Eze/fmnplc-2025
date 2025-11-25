@@ -1,6 +1,6 @@
 <template>
   <section id="subscribe-to-newsletter" class="newsletter-section py-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
       <div class="newsletter-card rounded-3xl p-8 md:p-12 shadow-2xl">
         <!-- Content -->
         <div class="text-center mb-8">
