@@ -177,3 +177,11 @@
 .expand-leave-from {
     max-height: 500px;
 }
+
+@media (max-width: 768px) {
+    .mobile-nav-button {
+        width: 100% !important;
+        flex-direction: row-reverse;
+        border: none !important;
+    }
+}

@@ -147,7 +147,7 @@
     <!-- Mobile Sidebar -->
     <Sidebar v-model:visible="mobileMenuOpen" position="right" class="mobile-sidebar w-80">
       <template #header>
-        <NuxtLink to="/" class="flex items-center justify-between w-full">
+        <NuxtLink to="/" class="flex items-center justify-between">
           <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="h-8 w-auto logo-img light-mode-img" />
           <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="h-8 w-auto logo-img dark-mode-img" />
         </NuxtLink>
@@ -191,7 +191,7 @@
 
           <!-- Mobile Submenu for FMN Verticals -->
           <Transition name="expand">
-            <div v-if="item.label === 'FMN Verticals' && item.hasDropdown && mobileDropdownOpen === item.label" class="mt-2 ml-4 space-y-2">
+            <div v-if="item.label === 'FMN Verticals' && item.hasDropdown && mobileDropdownOpen === item.label" class="mt-2 ml-2 space-y-2">
               <NuxtLink
                 v-for="vertical in verticals"
                 :key="vertical.name"
@@ -206,7 +206,7 @@
 
           <!-- Mobile Submenu for Sustainability -->
           <Transition name="expand">
-            <div v-if="item.label === 'Sustainability' && item.hasDropdown && mobileDropdownOpen === item.label" class="mt-2 ml-4 space-y-2">
+            <div v-if="item.label === 'Sustainability' && item.hasDropdown && mobileDropdownOpen === item.label" class="mt-2 ml-2 space-y-2">
               <NuxtLink
                 v-for="sustItem in sustainabilityLinks"
                 :key="sustItem.label"
@@ -220,7 +220,7 @@
 
           <!-- Mobile Submenu for Media -->
           <Transition name="expand">
-            <div v-if="item.label === 'Media' && item.hasDropdown && mobileDropdownOpen === item.label" class="mt-2 ml-4 space-y-2">
+            <div v-if="item.label === 'Media' && item.hasDropdown && mobileDropdownOpen === item.label" class="mt-2 ml-2 space-y-2">
               <NuxtLink
                 v-for="mediaItem in mediaLinks"
                 :key="mediaItem.label"
@@ -235,8 +235,8 @@
       </nav>
 
       <!-- Contact Section -->
-      <div class="border-t sidebar-border p-4">
-        <h3 class="contact-title font-semibold mb-3">Contact Us</h3>
+      <div class="border-y sidebar-border pt-4 pb-6 px-4">
+        <h3 class="contact-title font-semibold mb-3 text-base">Contact Us</h3>
         <div class="space-y-2">
           <a href="tel:+2347056891000" class="contact-link flex items-center space-x-3 text-sm">
             <i class="pi pi-phone pry-color"></i>
@@ -251,11 +251,12 @@
             <span>info@fmnplc.com</span>
           </a>
         </div>
-
+      </div>
+      <div class="p-4">
         <!-- Social Links -->
-        <div class="mt-4">
-          <h4 class="social-title font-semibold mb-3 text-sm">Follow Us</h4>
-          <div class="flex space-x-3">
+        <div class="mt-2">
+          <h3 class="social-title font-semibold mb-3 text-base text-center">Follow Us</h3>
+          <div class="flex space-x-3 justify-center">
             <a
               v-for="social in socialLinks"
               :key="social.name"
@@ -415,6 +416,29 @@ const toggleSearch = () => {
 .dark-mode .p-drawer.mobile-sidebar {
     background-color: rgba(1, 15, 5, 1);
 }
+.p-drawer.mobile-sidebar .p-inputtext {
+    background-color: rgba(1, 15, 5, 0.1);
+    color: #111827;
+    border-radius: 50px;
+    border: none;
+}
+.dark-mode .p-drawer.mobile-sidebar .p-inputtext {
+    background-color: rgba(243, 244, 246, 0.1);
+    color: #f3f4f6;
+}
+.p-drawer.mobile-sidebar .p-button-secondary {
+  background-color: rgba(1, 15, 5, 0.05);
+  border: none;
+}
+.p-drawer.mobile-sidebar .p-button-secondary span {
+  color: #111827;
+}
+.dark-mode .p-drawer.mobile-sidebar .p-button-secondary {
+  background-color: rgba(243, 244, 246, 0.1);
+}
+.dark-mode .p-drawer.mobile-sidebar .p-button-secondary span {
+  color: #f3f4f6;
+}
 
 /* PrimeVue Sidebar component internal styling */
 .dark-mode .p-sidebar {
@@ -437,6 +461,11 @@ const toggleSearch = () => {
 
 .dark-mode .p-sidebar-close:hover {
     background-color: #374151;
+}
+
+.mobile-nav-button .p-button-icon {
+    color: #111827;
+    font-size: 14px;
 }
 
 /* Mobile nav button text color */
