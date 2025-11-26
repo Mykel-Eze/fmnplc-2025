@@ -83,17 +83,17 @@
 
           <!-- Social Links -->
           <div class="flex items-center space-x-4 mt-4">
-            <a href="#linkedin" class="social-icon">
+            <a href="https://www.linkedin.com/company/the-fmn-group/" class="social-icon" target="_blank" rel="noopener noreferrer">
               <img src="@/assets/images/linkedin.svg" alt="linkedin">
             </a>
-            <a href="#instagram" class="social-icon">
+            <a href="https://www.instagram.com/thefmngroup/" class="social-icon" target="_blank" rel="noopener noreferrer">
               <img src="@/assets/images/instagram.svg" alt="instagram">
             </a>
-            <a href="#x" class="social-icon">
+            <a href="https://x.com/theFMNGroup" class="social-icon" target="_blank" rel="noopener noreferrer">
               <img src="@/assets/images/x.svg" alt="x">
             </a>
-            <a href="#facebook" class="social-icon">
-              <img src="@/assets/images/facebook.svg" alt="">
+            <a href="https://www.facebook.com/FMNGroup" class="social-icon" target="_blank" rel="noopener noreferrer">
+              <img src="@/assets/images/facebook.svg" alt="facebook">
             </a>
           </div>
         </div>

@@ -263,6 +263,7 @@
               :href="social.href"
               class="w-10 h-10 flex items-center justify-center rounded-lg pry-bg text-white hover:bg-green-800 transition-colors"
               :aria-label="social.name"
+              target="_blank" rel="noopener noreferrer"
             >
               <i :class="social.icon" class="text-lg"></i>
             </a>
@@ -373,10 +374,10 @@ const mediaLinks = [
 ];
 
 const socialLinks = [
-  { name: 'LinkedIn', icon: 'pi pi-linkedin', href: '#' },
-  { name: 'Instagram', icon: 'pi pi-instagram', href: '#' },
-  { name: 'Twitter', icon: 'pi pi-twitter', href: '#' },
-  { name: 'Facebook', icon: 'pi pi-facebook', href: '#' },
+  { name: 'LinkedIn', icon: 'pi pi-linkedin', href: 'https://www.linkedin.com/company/the-fmn-group/' },
+  { name: 'Instagram', icon: 'pi pi-instagram', href: 'https://www.instagram.com/thefmngroup/' },
+  { name: 'Twitter', icon: 'pi pi-twitter', href: 'https://x.com/theFMNGroup' },
+  { name: 'Facebook', icon: 'pi pi-facebook', href: 'https://web.facebook.com/FMNGroup' },
 ];
 
 let dropdownTimeout: ReturnType<typeof setTimeout>;
