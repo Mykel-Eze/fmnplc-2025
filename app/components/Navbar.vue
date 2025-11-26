@@ -149,7 +149,7 @@
       <template #header>
         <NuxtLink to="/" class="flex items-center justify-between">
           <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="h-8 w-auto logo-img light-mode-img" />
-          <img src="@/assets/images/fmn-black.png" alt="FMN Logo" class="h-8 w-auto logo-img dark-mode-img" />
+          <img src="@/assets/images/fmn-white.png" alt="FMN Logo" class="h-8 w-auto logo-img dark-mode-img" />
         </NuxtLink>
       </template>
 
@@ -185,6 +185,7 @@
             v-else
             :to="item.href"
             class="mobile-nav-link block px-4 py-3 font-medium rounded-lg"
+            @click="mobileMenuOpen = false"
           >
             {{ item.label }}
           </NuxtLink>
@@ -197,6 +198,7 @@
                 :key="vertical.name"
                 :to="vertical.href"
                 class="mobile-submenu-link flex items-center space-x-3 px-4 py-3 text-sm rounded-lg"
+                @click="mobileMenuOpen = false"
               >
                 <i :class="vertical.icon" class="text-lg text-green-700"></i>
                 <span>{{ vertical.name }}</span>
@@ -212,6 +214,7 @@
                 :key="sustItem.label"
                 :to="sustItem.href"
                 class="mobile-submenu-link block px-4 py-3 text-sm rounded-lg"
+                @click="mobileMenuOpen = false"
               >
                 {{ sustItem.label }}
               </NuxtLink>
@@ -226,6 +229,7 @@
                 :key="mediaItem.label"
                 :to="mediaItem.href"
                 class="mobile-submenu-link block px-4 py-3 text-sm rounded-lg"
+                @click="mobileMenuOpen = false"
               >
                 {{ mediaItem.label }}
               </NuxtLink>
