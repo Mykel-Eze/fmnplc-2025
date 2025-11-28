@@ -64,13 +64,14 @@
           Build your career with Nigeria's leading food and agro-allied group. 
           We offer diverse opportunities for growth and development in a dynamic environment.
         </p>
-        <Button
-          label="View Open Roles"
-          severity="success"
-          size="large"
-          class="careers-cta-button"
-          @click="viewRoles"
-        />
+        <NuxtLink to="/careers">
+          <Button
+            label="View Open Roles"
+            severity="success"
+            size="large"
+            class="careers-cta-button"
+          />
+        </NuxtLink>
       </div>
 
       <!-- Marquee Images (Bottom) -->
@@ -126,8 +127,8 @@ const careerImages = [
 
 const viewRoles = () => {
   // Navigate to careers page or open modal
-  console.log('View Open Roles clicked');
-// window.open('https://fmnplc.com', '_blank');
+  // console.log('View Open Roles clicked');
+  // window.open('https://www.fmnplc.com/careers', '_blank');
 };
 
 // Intersection Observer for scroll animation

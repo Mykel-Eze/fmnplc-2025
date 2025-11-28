@@ -51,6 +51,9 @@
     border-radius: 12px;
     margin-top: 10px;
 }
+.dropdown-menu.vertical-dropdown-menu .dm-bg {
+    margin-top: 3px;
+}
 .dark-mode .dropdown-menu .dm-bg {
     background-color: #1f2937;
     border-color: #374151;

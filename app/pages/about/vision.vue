@@ -10,20 +10,20 @@
         <div class="content-box">
           <div class="fmna-section p-8 border-l-6 border-green-700 bg-gray-50 rounded-lg">
             <h3 class="text-2xl font-bold text-gray-900 mb-4">Meet the Founder</h3>
-            <p class="text-gray-700 leading-relaxed text-base">
+            <p class="text-gray-700 leading-relaxed text-base mb-2">
               Mr. George Coumantaros was the Visioner and Founder of Flour Mills of Nigeria Plc (FMN). The
               company was formally established on the 29th of September 1960 as a single flour milling company
               but has now grown to a Group of over 22 subsidiaries with an impact across the Food and
               Agro-allied sector. In 1978, FMN became a public company listed on the Nigerian Stock Exchange
               and Mr. George Coumantaros became Chairman of the board of directors of FMN on 26th September 1978.
             </p>
-            <p class="text-gray-700 leading-relaxed text-base">
+            <p class="text-gray-700 leading-relaxed text-base mb-2">
               Mr. George Coumantaros was also committed to education and learning thus his ability to acquire
               learnings and insights needed to start and run a successful business. His University Education
               was at Athens University, in Greece, after which, he traveled to the US in 1946 to embark on an
               International Business Career.
             </p>
-            <p class="text-gray-700 leading-relaxed text-base">
+            <p class="text-gray-700 leading-relaxed text-base mb-2">
               As an astute leader with an unwavering commitment to excellence, Mr. George Coumantaros served
               on the Board of many reputable companies and organizations both in Nigeria and overseas, a
               commitment that left an indelible footprint for business sustainability within these organizations.

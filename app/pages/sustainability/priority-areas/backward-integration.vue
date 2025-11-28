@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="content-box">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 items-center mb-12">
-            <div class="text-base order-last md:order-first">
+            <div class="text-base order-last md:order-first space-y-3">
               <p>
                 FMN PLC has invested more than N150 billion over the past ten years to execute its core
                 business strategy to aid the agricultural sector. This investment has been made primarily

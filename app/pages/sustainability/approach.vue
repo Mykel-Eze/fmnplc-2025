@@ -12,13 +12,13 @@
         <div class="mb-14">
           <div class="approach-section mb-8 p-6 border-l-4 border-green-700 bg-gray-50 rounded-lg">
             <h3 class="text-2xl smbold-txt text-gray-900 mb-4">Approach</h3>
-            <p class="text-gray-700 leading-relaxed">
+            <p class="text-gray-700 leading-relaxed mb-2">
               FMN's Sustainability approach is based on respect for our people, cultures and the natural environment. We are committed to preserving biodiversity, reducing water usage, waste and the emission of Greenhouse gases. We care for the livelihood of the local communities and our employees in terms of health and welfare.
             </p>
-            <p class="text-gray-700 leading-relaxed">
+            <p class="text-gray-700 leading-relaxed mb-2">
               Our dedication is also to improve the governance, economic, environmental, and social aspects of our operations. Our vision becomes reality by putting into action programs and practices that optimize the use of natural resources, by developing energy efficient products and technologies, and by fostering innovation and creative solutions.
             </p>
-            <p class="text-gray-700 leading-relaxed">
+            <p class="text-gray-700 leading-relaxed mb-1">
               Our approach to embedding sustainability across the business is driven through FMN's "Tropos" - 4 Pillar Framework comprising Governance, Economic, Environmental, and Social pillars. These four pillars set out the areas where our knowledge and resources are enabling us to make a positive change and give structure for consolidation of all our sustainable efforts.
             </p>
           </div>

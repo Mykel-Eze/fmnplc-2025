@@ -3,7 +3,7 @@
     <section class="mb-12 mt-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="content-box">
-          <div class="text-base">
+          <div class="text-base space-y-3">
             <p>
               The fifth of the 17 Sustainable Development Goals established by United Nations in
               2015, challenges the world to “Achieve Gender Equality and Empower All Women and
@@ -28,8 +28,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="content-box">
           <h2 class="section-title pry-color">Promoting Gender Equality</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 items-center text-base">
-            <div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 items-center text-base mb-3">
+            <div class="space-y-3">
               <p>
                 As a diverse group, FMN promotes gender inclusivity at all levels of its operations and at
                 every stage of our employee's careers. This is because we are committed to fostering a positive
@@ -46,13 +46,15 @@
               <img src="@/assets/images/fmn-women-network.png" alt="fmn-women-network">
             </div>
           </div>
-          <div class="text-base">
+          <div class="text-base space-y-3">
             <p>
               The network was set up to enable the FMN Woman thrive and flourish professionally across all career
               levels by removing structural impediments to career advancement and work-life balance, and
               consequently increasing organizational value.
               We believe that as we create more awareness and the network grows, there will be a positive impact on
               the performance of business.
+            </p>
+            <p>
               An extensive series of initiatives and clear goals have been established to help advance our gender
               balance agenda and bolster our inclusive culture. This is evident in our clear commitment to provide
               equal opportunities for all employees in the company.

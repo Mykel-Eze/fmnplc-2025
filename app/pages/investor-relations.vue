@@ -32,7 +32,7 @@
     <!--=== CEO Quote Section ===-->
     <section class="mt-[60px] mb-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="ceo-quote mb-8 p-6 border-l-4 border-green-700 bg-gray-50 rounded-lg">
+        <div class="ceo-quote mb-8 p-8 border-l-4 border-green-700 bg-gray-50 rounded-lg">
           <p class="text-gray-700 leading-relaxed">
             It is time to take the company private, put the Businesses in their proper verticals, and attract
             the capital and the necessary technical expertise to grow each of these Businesses, not only for

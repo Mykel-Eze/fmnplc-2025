@@ -25,7 +25,7 @@
                                     {{ products[currentSlide]?.name }}
                                 </h3>
                                 <!-- <hr class="product-details-line" /> -->
-                                <div class="product-description text-gray-700 space-y-3">
+                                <div class="product-description text-gray-700 space-y-3 line-clamp-6">
                                     <p
                                         v-for="(paragraph, index) in products[currentSlide]?.description"
                                         :key="index"
@@ -110,7 +110,7 @@
                         <h3 class="product-name-mobile text-xl font-bold text-gray-900 mb-4 pb-4 border-b-2 border-gray-300">
                             {{ products[currentSlide]?.name }}
                         </h3>
-                        <div class="product-description-mobile text-gray-700 space-y-3">
+                        <div class="product-description-mobile text-gray-700 space-y-3 line-clamp-6">
                             <p
                                 v-for="(paragraph, index) in products[currentSlide]?.description"
                                 :key="index"

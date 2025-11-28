@@ -4,15 +4,17 @@
     <section class="about-content pt-6 sm:pt-10 pb-6 sm:pb-16 px-4 sm:px-6 lg:px-8">
       <div class="max-w-6xl mx-auto">
         <div class="content-box">
-          <p class="text-gray-700 text-base leading-relaxed mb-6 text-justify sm:text-left">
+          <p class="text-gray-700 text-base leading-relaxed mb-2 text-justify sm:text-left">
             Incorporated on the 29th of September 1960, as a limited liability company and pioneer wheat 
             miller in Nigeria, Flour Mills of Nigeria Plc (FMN) started out on a journey that has seen 
             the company evolve into what is now one of the biggest brands in the foods and agro-allied 
             industry in Africa. Over the years, the FMN brand grew tremendously from operating as a single 
             business, flour miller, to a vast business group with strategic investments that cover key 
             sectors of the Nigerian economy. The group’s operations can be categorized into four major 
-            sectors of Food, Sugar, Agro-allied, and Support services. Our foray into the Agric sector 
-            started in 1978, with the acquisition of a 10,000-hectare farm in Kaboji, Niger state as part 
+            sectors of Food, Sugar, Agro-allied, and Support services.
+          </p>
+          <p class="text-gray-700 text-base leading-relaxed mb-6 text-justify sm:text-left">
+            Our foray into the Agric sector started in 1978, with the acquisition of a 10,000-hectare farm in Kaboji, Niger state as part 
             of an investment and expansion strategy designed to create value in the supply chain and reduce 
             the reliance on imported raw materials. Since then, we have made substantial investments in the 
             primary processing of locally grown soybean, palm fruit, cassava, maize, sugar cane, sorghum, and 

@@ -6,18 +6,18 @@
                 <div class="ff-img-side">
                     <img src="@/assets/images/girl-holding-plant.jpg" alt="girl-holding-plant" class="rounded-lg">
                 </div>
-                <div class="ff-txt-side text-base">
-                    <p class="mb-2">
+                <div class="ff-txt-side text-base space-y-3">
+                    <p>
                         The FMN Foundation is an initiative of Flour Mills of Nigeria Plc (FMN), established
                         to cater to the Group's key Corporate Social Responsibility (CSR) projects and other
                         human impact and developmental initiatives.
                     </p>
-                    <p class="mb-2">
+                    <p>
                         For over six decades, FMN has been a source of livelihood for millions of Nigerian
                         families and has continued to feed Nigerians with superior quality products through
                         its iconic brand 'Golden Penny'.
                     </p>
-                    <p class="mb-2">
+                    <p>
                         Through the FMN Foundation, the Group will broaden its corporate social responsibility
                         touchpoints in Nigeria and progressively, across the continent.
                     </p>

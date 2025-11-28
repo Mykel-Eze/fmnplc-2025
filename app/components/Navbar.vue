@@ -114,7 +114,7 @@
         v-if="activeDropdown === 'FMN Verticals'"
         @mouseenter="showDropdown('FMN Verticals')"
         @mouseleave="hideDropdown()"
-        class="dropdown-menu absolute left-0 right-0 border-t max-w-3xl mx-auto"
+        class="dropdown-menu vertical-dropdown-menu absolute left-0 right-0 border-t max-w-3xl mx-auto"
       >
         <div class="dm-bg max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h3 class="dropdown-title pry-color smbold-txt text-lg mb-6">Business Verticals</h3>
@@ -123,6 +123,7 @@
               v-for="vertical in verticals"
               :key="vertical.name"
               :to="vertical.href"
+              target="_blank" rel="noopener noreferrer"
               class="vertical-card flex items-start space-x-4 p-4 rounded-lg transition-colors group"
             >
               <div class="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-700 transition-colors">
@@ -199,6 +200,7 @@
                 :to="vertical.href"
                 class="mobile-submenu-link flex items-center space-x-3 px-4 py-3 text-sm rounded-lg"
                 @click="mobileMenuOpen = false"
+                target="_blank" rel="noopener noreferrer"
               >
                 <i :class="vertical.icon" class="text-lg text-green-700"></i>
                 <span>{{ vertical.name }}</span>

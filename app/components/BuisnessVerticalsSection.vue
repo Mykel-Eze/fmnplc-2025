@@ -92,28 +92,28 @@ const verticals: Vertical[] = [
     name: 'Golden Penny Foods',
     description: 'Golden Penny Foods Ltd is a leading food and agro-allied company in Nigeria, producing a range of high-quality food products. We are committed to providing nutritious and affordable food options for Nigerian families.',
     image: '/verticals/for-gpf.jpg',
-    url: '#'
+    url: 'https://www.fmnfoods.com/'
   },
   {
     id: 'fmn-agro',
     name: 'FMN Agro',
     description: 'Supporting local farmers with agricultural inputs, technical assistance, and market access. Through our outgrower programs, we empower thousands of farmers across Nigeria to improve their yields and livelihoods.',
     image: '/verticals/for-fmn-agro.jpg',
-    url: '#'
+    url: 'https://www.fmnagro.com/'
   },
   {
     id: 'golden-sugar',
     name: 'Golden Sugar Company',
     description: 'Golden Sugar Company Ltd produces high-quality refined sugar while promoting sustainable sugar cultivation. We operate one of the largest sugar refineries in West Africa with state-of-the-art facilities.',
     image: '/verticals/for-gsc.jpg',
-    url: '#'
+    url: 'https://goldensugarng.com/'
   },
   {
     id: 'bagco',
     name: 'BAGCO Packaging Solutions',
     description: 'BAGCO is Africa\'s largest polyethylene converting plant and West Africa\'s largest woven polypropylene sack manufacturing facility, offering innovative packaging solutions for various industries.',
     image: '/verticals/for-bagco.jpg',
-    url: '#'
+    url: 'https://bagco-ng.com/'
   },
   {
     id: 'infrastructure',
@@ -121,7 +121,7 @@ const verticals: Vertical[] = [
     subtitle: '(ABTL)',
     description: 'Apapa Bulk Terminal Limited (ABTL) is a leading Nigerian Port Terminal company with state-of-the-art port facilities. We provide efficient cargo handling services and contribute to Nigeria\'s logistics infrastructure.',
     image: '/verticals/for-abtl.jpg',
-    url: '#'
+    url: 'https://apapabulk.com/'
   },
   {
     id: 'holdings',

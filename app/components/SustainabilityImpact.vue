@@ -80,11 +80,13 @@
           </div>
 
           <!-- CTA Button -->
-          <Button
-            label="View Sustainability Report"
-            class="cta-button"
-            @click="viewReport"
-          />
+          <NuxtLink to="/sustainability-report.pdf">
+            <Button
+              label="View Sustainability Report"
+              class="cta-button"
+              @click="viewReport"
+            />
+          </NuxtLink>
         </div>
       </div>
     </div>

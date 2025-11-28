@@ -2,9 +2,14 @@
 
 /*---=== Hero Section ===---*/
 .hero-section {
-    background-color: #111827;
+  padding: 10px;
 }
-.dark-mode .hero-section {
+.hero-section .p-carousel {
+    background-color: #111827;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.dark-mode .hero-section .p-carousel {
     background-color: #000000;
 }
 .hero-section .p-carousel-content {
@@ -35,7 +40,7 @@ h1.hero-title {
 }
 p.hero-description {
     font-size: 16px;
-    line-height: 120%;
+    line-height: 140%;
 }
 button.hero-cta-button {
     background-color: rgba(248, 220, 88, 1);

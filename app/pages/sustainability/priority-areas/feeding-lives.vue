@@ -170,18 +170,18 @@
                 Promoting innovative and sustainable development in our operations
               </h2>
               
-              <p class="text-sm leading-relaxed">
+              <p class="text-sm leading-relaxed mb-2">
                 Recognizing that our business is ultimately about providing for the livelihoods of millions
                 of Nigerian families, FMN is committed to collaborating across the food value chain, while
                 transforming the role of agriculture in society.
               </p>
-              <p class="text-sm leading-relaxed">
+              <p class="text-sm leading-relaxed mb-2">
                 We have continued to put into action, programs and practices that optimize the use of natural
                 resources to ensure that our vision becomes a reality. We have accomplished this by developing
                 energy efficient technologies, and by fostering innovations and creative solutions that add
                 value for our clients, communities and the environment.
               </p>
-              <p class="text-sm leading-relaxed">
+              <p class="text-sm leading-relaxed mb-2">
                 To reduce the emission of harmful gases and hazardous air pollutants, we have adopted gas-fired
                 engines for our power generation requirements in most of our factories. This is part of a
                 phaseout process for old diesel engine generators in all our factories.

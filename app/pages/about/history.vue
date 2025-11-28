@@ -28,7 +28,7 @@
               <AccordionPanel value="0">
                   <AccordionHeader>Historical Highlights</AccordionHeader>
                   <AccordionContent>
-                      <ul class="p-5 sm:p-10">
+                      <ul class="p-5 sm:py-0 sm:px-10 flex flex-col gap-4">
                         <li>
                           <b>1960</b> - Flour Mills is incorporated as a limited liability company on the 29th of September 1960.
                         </li>
@@ -100,12 +100,12 @@
     </section>
 
     <!--=== Other History contents ===-->
-    <section class="other-history-content">
+    <section class="other-history-content my-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="content-box">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6 items-center mb-12">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6 items-center mb-16">
             <div class="text-base order-last lg:order-first">
-              <p>
+              <p class="mb-3">
                 Wheat milling forms the financial backbone of our diversified company. FMN pioneered flour 
                 milling in Nigeria when its first mill was commissioned at Apapa in 1962 with a grinding
                 capacity of 500 metric tonnes of wheat per day. Today, the Apapa milling complex has a rated
@@ -164,7 +164,7 @@
           </div>
 
           <div class="fmna-section mt-12 p-8 border-b-6 border-green-700 bg-gray-50 rounded-lg">
-            <p class="text-gray-700 leading-relaxed text-base">
+            <p class="text-gray-700 leading-relaxed text-base mb-3">
               Beyond wheat based products, FMN Group's strategic imperative in the years ahead is to create
               value in the supply chain and reduce dependence on imported raw materials. To this end, FMN has
               recently invested billions of Naira in its agro-allied ventures. The Group's strategic
@@ -213,6 +213,10 @@
 #history-page #fmn-stories {
   padding-top: 16px;
   padding-bottom: 40px;
+}
+
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader .p-accordionheader-toggle-icon {
+  color: white !important;
 }
 
 .history-accordion .p-accordioncontent-content {
