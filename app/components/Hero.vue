@@ -19,7 +19,7 @@
             <img
               :src="data.image"
               :alt="data.title"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover object-center md:object-center"
             />
             <!-- <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div> -->
           </div>

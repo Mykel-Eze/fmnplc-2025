@@ -430,15 +430,6 @@ small.vertical-subtitle {
 .dark-mode .video-description p {
   color: #d1d5db;
 }
-.dark-mode .play-button {
-  background-color: rgba(31, 41, 55, 0.9);
-}
-.dark-mode .play-button i {
-  color: #f3f4f6;
-}
-.dark-mode .play-button:hover {
-  background-color: rgba(31, 41, 55, 1);
-}
 
 /* Responsive */
 @media (max-width: 1024px) {

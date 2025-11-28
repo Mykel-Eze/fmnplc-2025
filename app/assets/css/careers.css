@@ -275,7 +275,7 @@ section#fmn-family .fmn-family-block:nth-child(6) {
     text-align: center;
 }
 
-.p-carousel-content .p-button {
+#careers-page .p-carousel-content .p-button {
     display: none;
 }
 #testimonials button.p-carousel-indicator-button {

@@ -37,13 +37,13 @@
                 Build your career with Nigeria's leading food and agro-allied group. 
                 We offer diverse opportunities for growth and development in a dynamic environment.
               </p>
-              <Button
-                label="View Open Roles"
-                severity="success"
-                size="large"
-                class="careers-cta-button"
-                @click="viewRoles"
-              />
+              <NuxtLink to="/careers">
+                <Button
+                  label="View Open Roles"
+                  size="large"
+                  class="careers-cta-button"
+                />
+              </NuxtLink>
             </div>
           </template>
         </Card>
@@ -67,7 +67,6 @@
         <NuxtLink to="/careers">
           <Button
             label="View Open Roles"
-            severity="success"
             size="large"
             class="careers-cta-button"
           />

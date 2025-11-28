@@ -179,7 +179,7 @@
             :label="item.label"
             :icon="mobileDropdownOpen === item.label ? 'pi pi-chevron-up' : 'pi pi-chevron-down'"
             text
-            class="w-full justify-between mobile-nav-button"
+            class="w-full !justify-between mobile-nav-button"
             @click="toggleMobileDropdown(item.label)"
           />
           <NuxtLink
