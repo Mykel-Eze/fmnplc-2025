@@ -179,10 +179,10 @@ const firstRowLogos: Logo[] = [
 
 const secondRowLogos: Logo[] = [
   { id: 'bagco-2', src: '/logos/bagco.png', alt: 'BAGCO', url: 'https://bagco-ng.com/' },
-  { id: 'shao-golden', src: '/logos/shao-golden-farms.png', alt: 'Shao Golden Farms', url: 'https://www.fmnagro.com/press-release/fmn-rebrands-two-subsidiaries-under-its-agro-allied-division' },
+  { id: 'shao-golden', src: '/logos/shao-golden-farms.png', alt: 'Shao Golden Farms', url: 'https://www.fmnagro.com/' },
   { id: 'golden-sugar-2', src: '/logos/golden-sugar.png', alt: 'Golden Sugar Company', url: 'https://goldensugarng.com/' },
-  { id: 'golden-agri', src: '/logos/golden-agri-inputs.png', alt: 'Golden Agri Inputs', url: 'https://goldenagri.com/' },
-  { id: 'agri-palm', src: '/logos/agri-palm.png', alt: 'Agri Palm', url: 'https://agripalm.com/' },
+  { id: 'golden-agri', src: '/logos/golden-agri-inputs.png', alt: 'Golden Agri Inputs', url: 'https://goldenagriinputs.com/' },
+  { id: 'agri-palm', src: '/logos/agri-palm.png', alt: 'Agri Palm', url: 'https://www.fmnagro.com/' },
   { id: 'eagle-flour', src: '/logos/eagle-flour.png', alt: 'Eagle Flour', url: 'https://eagleflour.com/' },
   { id: 'golden-fertilizer', src: '/logos/golden-fertilizer.png', alt: 'Golden Fertilizer', url: 'https://goldenfertilizer.com/' },
   { id: 'sunti-golden', src: '/logos/sunti-golden.png', alt: 'Sunti Golden Sugar Estates', url: 'https://goldensugarng.com/' }

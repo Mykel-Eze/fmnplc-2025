@@ -108,13 +108,13 @@ const newsArticles = ref<NewsArticle[]>([
 const readArticle = (id: string) => {
   console.log('Read article:', id);
   // Navigate to article detail page
-  // navigateTo(`/news/${id}`);
+  navigateTo(`/blog/${id}`);
 };
 
 const viewAllNews = () => {
   console.log('View all news clicked');
   // Navigate to news listing page
-  // navigateTo('/news');
+  navigateTo('/blog');
 };
 </script>
 

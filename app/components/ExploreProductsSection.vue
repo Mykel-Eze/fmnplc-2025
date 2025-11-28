@@ -212,7 +212,7 @@ const products: Product[] = [
     description: [
       'Discover our diverse portfolio of businesses that work together to deliver quality products and services across Nigeria. Discover our diverse portfolio of businesses that work together to deliver quality products and services across Nigeria.',
     ],
-    image: '/products/fertilizer.png'
+    image: '/products/fertilizer-new.png'
   },
   {
     id: 8,
