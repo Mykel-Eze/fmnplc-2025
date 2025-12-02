@@ -11,32 +11,34 @@
         <div class="hidden lg:flex flex-row items-center gap-8">
             <div class="w-full flex items-center justify-center">
                 <div class="product-item-container relative">
-                    <Transition :name="slideDirection" mode="out-in">
-                        <div :key="currentSlide" class="product-item-wrapper items-center gap-8 p-8 shadow-lg">
-                            <div class="product-image-wrapper relative z-10">
-                                <img
-                                    :src="products[currentSlide]?.image"
-                                    :alt="products[currentSlide]?.name"
-                                    class="product-image object-contain mx-auto"
-                                />
-                            </div>
-                            <div class="product-details max-w-[350px]">
-                                <h3 class="product-name text-xl lg:text-2xl font-bold text-gray-900 mb-4">
-                                    {{ products[currentSlide]?.name }}
-                                </h3>
-                                <!-- <hr class="product-details-line" /> -->
-                                <div class="product-description text-gray-700 space-y-3 line-clamp-6">
-                                    <p
-                                        v-for="(paragraph, index) in products[currentSlide]?.description"
-                                        :key="index"
-                                        class="leading-relaxed"
-                                    >
-                                        {{ paragraph }}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </Transition>
+                    <div class="product-slide-wrapper p-8 shadow-lg">
+                      <Transition :name="slideDirection" mode="out-in">
+                          <div :key="currentSlide" class="product-item-wrapper items-center gap-8">
+                              <div class="product-image-wrapper relative z-10">
+                                  <img
+                                      :src="products[currentSlide]?.image"
+                                      :alt="products[currentSlide]?.name"
+                                      class="product-image object-contain mx-auto"
+                                  />
+                              </div>
+                              <div class="product-details max-w-[350px]">
+                                  <h3 class="product-name text-xl lg:text-2xl font-bold text-gray-900 mb-4">
+                                      {{ products[currentSlide]?.name }}
+                                  </h3>
+                                  <!-- <hr class="product-details-line" /> -->
+                                  <div class="product-description text-gray-700 space-y-3 line-clamp-6">
+                                      <p
+                                          v-for="(paragraph, index) in products[currentSlide]?.description"
+                                          :key="index"
+                                          class="leading-relaxed"
+                                      >
+                                          {{ paragraph }}
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </Transition>
+                    </div>
                 </div>
             </div>
 
