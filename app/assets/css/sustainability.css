@@ -37,7 +37,7 @@
 .award-photo:hover {
     transform: scale(1.05);
 }
-.p-accordionpanel .p-accordionheader-toggle-icon {
+:root:not(.dark-mode) .sustainability-pages-container .p-accordionpanel .p-accordionheader-toggle-icon {
     color: white !important;
 }
 

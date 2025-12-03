@@ -17,7 +17,7 @@
           >
             <NuxtLink
               :to="item.href"
-              class="nav-link px-4 py-2 text-[12px] font-medium transition-colors block"
+              :class="['nav-link px-4 py-2 text-[12px] font-medium transition-colors block', { 'active-parent': isParentActive(item.label) }]"
               @mouseenter="item.hasDropdown ? showDropdown(item.label) : null"
               @mouseleave="item.hasDropdown ? hideDropdown() : null"
             >
@@ -281,10 +281,26 @@
 </template>
 
 <script lang="ts" setup>
+const route = useRoute();
 const mobileMenuOpen = ref(false);
 const activeDropdown = ref<string | null>(null);
 const mobileDropdownOpen = ref<string | null>(null);
 const isDarkMode = ref(false);
+
+// Check if parent nav item should be active based on current route
+const isParentActive = (label: string) => {
+  const path = route.path.toLowerCase();
+
+  if (label === 'Sustainability') {
+    return path.startsWith('/sustainability');
+  }
+
+  if (label === 'Media') {
+    return path.startsWith('/gallery') || path.startsWith('/blog') || path.startsWith('/press');
+  }
+
+  return false;
+};
 
 // Initialize dark mode from localStorage or system preference
 onMounted(() => {

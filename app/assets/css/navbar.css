@@ -29,6 +29,18 @@
 .dark-mode .nav-link:hover {
     color: #10b981;
 }
+/* Only target main nav links, not dropdown links */
+nav .nav-item-wrapper .nav-link.router-link-active,
+nav .nav-item-wrapper .nav-link.active-parent {
+    color: white !important;
+    background: rgb(21 128 61 / 80%);
+    border-radius: 22px;
+}
+.dark-mode nav .nav-item-wrapper .nav-link.router-link-active,
+.dark-mode nav .nav-item-wrapper .nav-link.active-parent {
+    background: rgb(21 128 61 / 30%);
+}
+
 .triangle {
     width: 0;
     height: 0;
