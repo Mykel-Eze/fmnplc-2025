@@ -16,7 +16,7 @@
                           <AccordionPanel value="2024">
                               <AccordionHeader>Annual Reports 2024</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <a href="/reports/flourmill-report-31-10-24.pdf" download class="report-document">
                                         <span>2024 Annual Report & Accounts</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -36,7 +36,7 @@
                           <AccordionPanel value="2023">
                               <AccordionHeader>Annual Reports 2023</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/2023/FMN+2023_INNER+DESIGN_ADJUST_NEW_FINAL_REDUCED.pdf" download class="report-document">
                                         <span>2023 Annual Report & Accounts</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -56,7 +56,7 @@
                           <AccordionPanel value="2022">
                               <AccordionHeader>Annual Reports 2022</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/2022/FMN+Annual+Report+2022.pdf" download class="report-document">
                                         <span>2022 Annual Report & Accounts</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -76,7 +76,7 @@
                           <AccordionPanel value="2021">
                               <AccordionHeader>Annual Reports 2021</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/2021/FMN Annual Report_31_Aug_21.pdf" download class="report-document">
                                         <span>2021 Annual Report & Accounts</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -96,7 +96,7 @@
                           <AccordionPanel value="2020">
                               <AccordionHeader>Annual Reports 2020</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/Annual Reports 2020/FMN_Annual_Report_2020_Web_Version2.pdf" download class="report-document">
                                         <span>2020 Annual Report & Accounts</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -120,7 +120,7 @@
                           <AccordionPanel value="before-2020">
                               <AccordionHeader>Annual Reports - Before 2020</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <div class="font-bold text-gray-700 dark:text-gray-300 mt-2">2019</div>
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/Financial Results/Annual Reports/2019 Audited Financial Statements.pdf" download class="report-document">
                                         <span>2019 Audited Financial Statements</span>
@@ -151,7 +151,7 @@
                           <AccordionPanel value="quarterly">
                               <AccordionHeader>Quarterly Reports</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <div class="font-bold text-gray-700 dark:text-gray-300 mt-2">2024</div>
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/2024/FMN+Plc+Q1+report+-+June+2024.pdf" download class="report-document">
                                         <span>Q1 Unaudited Financial Statements</span>
@@ -183,7 +183,7 @@
                           <AccordionPanel value="2024">
                               <AccordionHeader>2024 Annual Report Collaterals</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/2024/agm/FMN+AGM+2024+Notice.pdf" download class="report-document">
                                         <span>Notice of AGM 2024</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -211,7 +211,7 @@
                           <AccordionPanel value="agm">
                               <AccordionHeader>Annual General Meetings</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <NuxtLink href="/agm-2023-live" target="_blank" class="report-document">
                                         <span>AGM 2023</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -236,8 +236,8 @@
                           <AccordionPanel value="2024">
                               <AccordionHeader>Events and Presentations 2024</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
-                                    <div class="font-bold text-gray-700 dark:text-gray-300 mt-2">Analyst Presentations</div>
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
+                                    <!-- <div class="font-bold text-gray-700 dark:text-gray-300 mt-2">Analyst Presentations</div> -->
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/2024/Q125+Results+Presentation.pdf" download class="report-document">
                                         <span>Flour Mills of Nigeria Plc Q1'25 Result Presentation</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -253,8 +253,8 @@
                           <AccordionPanel value="2023">
                               <AccordionHeader>Events and Presentations 2023</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
-                                    <div class="font-bold text-gray-700 dark:text-gray-300 mt-2">Analyst Presentations</div>
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
+                                    <!-- <div class="font-bold text-gray-700 dark:text-gray-300 mt-2">Analyst Presentations</div> -->
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/2023/FMN+Q3'24+IR+Presentation+-+Final.pdf" download class="report-document">
                                         <span>Flour Mills of Nigeria Q3'24 Investor Presentation</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -278,8 +278,8 @@
                           <AccordionPanel value="2022">
                               <AccordionHeader>Events and Presentations 2022</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
-                                    <div class="font-bold text-gray-700 dark:text-gray-300 mt-2">Analyst Presentations</div>
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
+                                    <!-- <div class="font-bold text-gray-700 dark:text-gray-300 mt-2">Analyst Presentations</div> -->
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/2022/Flour+Mills+of+Nigeria+Plc+H1'23+Investor+Presentation.pdf" download class="report-document">
                                         <span>Flour Mills of Nigeria H1'22 Results</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
@@ -300,7 +300,7 @@
                           <AccordionPanel value="policies">
                               <AccordionHeader>Policies</AccordionHeader>
                               <AccordionContent>
-                                  <div class="flex flex-col gap-3">
+                                  <div class="flex flex-col gap-3 pt-3 pb-3">
                                     <a href="https://flourmills.s3.eu-central-1.amazonaws.com/reports/Policies/01 Food Safety Policy Statement.pdf" download class="report-document">
                                         <span>Food Safety Policy Statement</span>
                                         <img src="@/assets/images/download-icon.svg" alt="download" class="download-icon">
